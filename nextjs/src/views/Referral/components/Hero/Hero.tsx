@@ -24,7 +24,7 @@ const Hero = (): JSX.Element => {
               color="text.primary"
               sx={{ fontWeight: 700 }}
             >
-              Let's get better, together!
+              Gods Unchained is the most exciting NFT trading card game!
               <Typography
                 color={'primary'}
                 component={'span'}
@@ -40,7 +40,15 @@ const Hero = (): JSX.Element => {
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Master Class Coaching and Gameplay Review.
+              Start your journey the right way!
+              <br />
+              <br />
+              Use this special referral link to earn 10 GODS coin!
+              <br />
+              <i>(Code: ECprwkmfcV)</i>
+              <br />
+              <br />
+              https://godsunchained.com/account/register?referral=ECprwkmfcV
             </Typography>
           </Box>
           <Box
@@ -53,22 +61,10 @@ const Hero = (): JSX.Element => {
               color="primary"
               size="large"
               fullWidth={isMd ? false : true}
-              href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
+              href="https://godsunchained.com/account/register?referral=ECprwkmfcV"
             >
-              Start now
+              Start Playing Gods Unchained Now
             </Button>
-            <Box
-              component={Button}
-              variant="outlined"
-              color="primary"
-              size="large"
-              marginTop={{ xs: 2, sm: 0 }}
-              marginLeft={{ sm: 2 }}
-              fullWidth={isMd ? false : true}
-              href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
-            >
-              Learn more
-            </Box>
           </Box>
         </Box>
       </Grid>
@@ -97,6 +93,52 @@ const Hero = (): JSX.Element => {
             filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
           }}
         />
+      </Grid>
+      <Grid container spacing={isMd ? 4 : 2}>
+        <Grid item xs={12} sm={6} data-aos={'fade-up'}>
+          <Grid container alignItems="center">
+            <Box
+              component={LazyLoadImage}
+              height={1}
+              width={1}
+              src={'https://philipsweb.blob.core.windows.net/$web/gamegods.png'}
+              alt="..."
+              effect="blur"
+              boxShadow={3}
+              borderRadius={2}
+              maxWidth={600}
+              sx={{
+                filter:
+                  theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+              }}
+            />
+          </Grid>
+        </Grid>
+        <Grid item xs={12} sm={6} data-aos={'fade-up'}>
+          <Grid
+            container
+            alignItems="center"
+            sx={{
+              marginTop: { xs: 0, md: '40%' },
+            }}
+          >
+            <Box
+              component={LazyLoadImage}
+              height={1}
+              width={1}
+              src={'https://philipsweb.blob.core.windows.net/$web/Tourney.PNG'}
+              alt="..."
+              effect="blur"
+              boxShadow={3}
+              borderRadius={2}
+              maxWidth={600}
+              sx={{
+                filter:
+                  theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
+              }}
+            />
+          </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );

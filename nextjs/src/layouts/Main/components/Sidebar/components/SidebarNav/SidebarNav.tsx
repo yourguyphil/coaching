@@ -7,11 +7,6 @@ import NavItem from './components/NavItem';
 
 interface Props {
   pages: {
-    landings: Array<PageItem>;
-    company: Array<PageItem>;
-    account: Array<PageItem>;
-    secondary: Array<PageItem>;
-    blog: Array<PageItem>;
     portfolio: Array<PageItem>;
   };
 }
@@ -20,14 +15,7 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
-  const {
-    landings: landingPages,
-    secondary: secondaryPages,
-    company: companyPages,
-    account: accountPages,
-    portfolio: portfolioPages,
-    blog: blogPages,
-  } = pages;
+  const { portfolio: portfolioPages } = pages;
 
   return (
     <Box>
@@ -43,8 +31,8 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             component={'img'}
             src={
               mode === 'light'
-                ? 'https://assets.maccarianagency.com/the-front/logos/logo.svg'
-                : 'https://assets.maccarianagency.com/the-front/logos/logo-negative.svg'
+                ? 'https://philipsweb.blob.core.windows.net/$web/myLogoPhilips.svg'
+                : 'https://philipsweb.blob.core.windows.net/$web/myLogoPhilips.svg'
             }
             height={1}
             width={1}
@@ -53,33 +41,7 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Landings'} items={landingPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Company'} items={companyPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Pages'} items={secondaryPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Account'} items={accountPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Blog'} items={blogPages} />
-        </Box>
-        <Box>
-          <NavItem title={'Portfolio'} items={portfolioPages} />
-        </Box>
-        <Box marginTop={2}>
-          <Button
-            size={'large'}
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="/docs/introduction"
-          >
-            Documentation
-          </Button>
+          <NavItem title={'Learn More'} items={portfolioPages} />
         </Box>
         <Box marginTop={1}>
           <Button
@@ -89,9 +51,9 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
             fullWidth
             component="a"
             target="blank"
-            href="https://mui.com/store/items/the-front-landing-page/"
+            href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
           >
-            Purchase now
+            Start Now
           </Button>
         </Box>
       </Box>
