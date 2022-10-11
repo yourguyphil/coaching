@@ -20,7 +20,7 @@ export const useDarkMode = (): [string, () => void, boolean] => {
   };
 
   const themeToggler = (): void => {
-    themeMode === 'light' ? setMode('dark') : setMode('light');
+    themeMode === 'dark' ? setMode('dark') : setMode('dark');
   };
 
   useEffect(() => {

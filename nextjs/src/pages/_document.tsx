@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <link
             rel="shortcut icon"
-            href="https://assets.maccarianagency.com/favicons/thefront/favicon.ico"
+            href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
           />
           <meta name="theme-color" content="#ffffff" />
           <meta
@@ -29,10 +29,7 @@ export default class MyDocument extends Document {
             property="og:image"
             content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
           />
-          <meta
-            property="og:title"
-            content="theFront | UI Kit by Maccarian Agency."
-          />
+          <meta property="og:title" content="Philips Nguyen | Master Class" />
           <meta
             property="og:description"
             content="A modern design system for your new landing and web pages."

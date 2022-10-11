@@ -12,7 +12,7 @@ const ThemeModeToggler = (): JSX.Element => {
       variant={'outlined'}
       onClick={() => themeToggler()}
       aria-label="Dark mode toggler"
-      color={mode === 'light' ? 'primary' : 'secondary'}
+      color={mode === 'dark' ? 'primary' : 'secondary'}
       sx={{
         borderRadius: 2,
         minWidth: 'auto',
