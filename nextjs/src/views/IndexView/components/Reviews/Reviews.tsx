@@ -23,7 +23,7 @@ const mock = [
   {
     title: 'Deck Building',
     subtitle:
-      'Review top decks, your own collection and ensure what we bring to each match will be potent. Gain a competative edge through refined configurations of your cards.',
+      'Review top decks, your own collection and ensure what we bring to each match will be potent. Gain a competitive edge through refined configurations of your cards.',
     icon: 'https://philipsweb.blob.core.windows.net/$web/Deck.png',
   },
 ];

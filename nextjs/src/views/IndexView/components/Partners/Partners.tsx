@@ -67,8 +67,8 @@ const Partners = (): JSX.Element => {
             my hands on!
             <br />
             <br />
-            Here are just a few games I play on a competative level that I can
-            provide you with my experiances with.
+            Here are just a few games I play on a competitive level that I can
+            provide you with my experiences with.
             <br />
             <br />
             Resume:
