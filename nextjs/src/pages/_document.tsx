@@ -9,6 +9,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <script
+            defer
+            data-domain="coaching.philipsnguyen.com"
+            src="https://plausible.io/js/plausible.js"
+          ></script>
           <link
             rel="shortcut icon"
             href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
