@@ -8,6 +8,7 @@ import NavItem from './components/NavItem';
 interface Props {
   pages: {
     portfolio: Array<PageItem>;
+    freecoaching: Array<PageItem>;
   };
 }
 
@@ -15,7 +16,7 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
-  const { portfolio: portfolioPages } = pages;
+  const { portfolio: portfolioPages, freecoaching: freecoachingPages } = pages;
 
   return (
     <Box>
@@ -41,7 +42,10 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
       </Box>
       <Box paddingX={2} paddingY={2}>
         <Box>
-          <NavItem title={'Learn More'} items={portfolioPages} />
+          <NavItem title={'Free Gaming Resources'} items={portfolioPages} />
+        </Box>
+        <Box>
+          <NavItem title={'Free Stratergy Guides'} items={freecoachingPages} />
         </Box>
         <Box marginTop={1}>
           <Button

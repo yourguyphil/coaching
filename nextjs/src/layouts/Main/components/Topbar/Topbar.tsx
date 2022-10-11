@@ -11,6 +11,7 @@ interface Props {
   onSidebarOpen: () => void;
   pages: {
     portfolio: Array<PageItem>;
+    freecoaching: Array<PageItem>;
   };
   colorInvert?: boolean;
 }
@@ -22,7 +23,7 @@ const Topbar = ({
 }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  const { portfolio: portfolioPages } = pages;
+  const { portfolio: portfolioPages, freecoaching: freecoachingPages } = pages;
 
   return (
     <Box
@@ -52,9 +53,17 @@ const Topbar = ({
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
         <Box marginLeft={4}>
           <NavItem
-            title={'Learn More'}
+            title={'Free Gaming Resources'}
             id={'portfolio-pages'}
             items={portfolioPages}
+            colorInvert={colorInvert}
+          />
+        </Box>
+        <Box marginLeft={4}>
+          <NavItem
+            title={'Free Stratergy Guides'}
+            id={'freecoaching-pages'}
+            items={freecoachingPages}
             colorInvert={colorInvert}
           />
         </Box>

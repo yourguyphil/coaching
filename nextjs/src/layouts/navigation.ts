@@ -9,6 +9,12 @@ const pages = {
       href: '/404',
     }
   ],
+  freecoaching: [
+    {
+      title: 'Comming Soon',
+      href: '/404',
+    }
+  ]
 };
 
 export default pages;

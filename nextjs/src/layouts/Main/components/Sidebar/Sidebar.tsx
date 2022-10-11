@@ -10,6 +10,7 @@ interface Props {
   variant: 'permanent' | 'persistent' | 'temporary' | undefined;
   pages: {
     portfolio: Array<PageItem>;
+    freecoaching: Array<PageItem>;
   };
 }
 
