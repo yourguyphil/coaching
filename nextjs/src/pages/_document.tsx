@@ -9,40 +9,78 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
           <link
             rel="shortcut icon"
             href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
           />
           <meta name="theme-color" content="#ffffff" />
+          <title>Philips Nguyen | Master Class TCG Coaching</title>
+          <meta
+            name="title"
+            content="Philips Nguyen | Master Class TCG Coaching"
+          ></meta>
           <meta
             name="description"
-            content="A modern design system for your new landing and web pages."
-          />
-          <meta
-            name="robots"
-            content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
-          />
-          <meta property="og:locale" content="en_US" />
-          <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content="https://assets.maccarianagency.com/screenshots/the-front/social.png"
-          />
-          <meta property="og:title" content="Philips Nguyen | Master Class" />
-          <meta
-            property="og:description"
-            content="A modern design system for your new landing and web pages."
-          />
+            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
+
+My name is Philips and I am a competitive card game player.
+
+Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
+
+Let me share what I have learned so that you more rapidly grow!"
+          ></meta>
+
+          <meta property="og:type" content="website"></meta>
           <meta
             property="og:url"
-            content="https://thefront.maccarianagency.com/"
-          />
-          <link rel="preconnect" href="https://fonts.gstatic.com" />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
-            rel="stylesheet"
-          />
+            content="https://coaching.philipsnguyen.com/"
+          ></meta>
+          <meta
+            property="og:title"
+            content="Philips Nguyen | Master Class TCG Coaching"
+          ></meta>
+          <meta
+            property="og:description"
+            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
+
+My name is Philips and I am a competitive card game player.
+
+Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
+
+Let me share what I have learned so that you more rapidly grow!
+
+I offer to you my master class TCG coaching!"
+          ></meta>
+          <meta
+            property="og:image"
+            content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          ></meta>
+
+          <meta property="twitter:card" content="summary_large_image"></meta>
+          <meta
+            property="twitter:url"
+            content="https://coaching.philipsnguyen.com/"
+          ></meta>
+          <meta
+            property="twitter:title"
+            content="Philips Nguyen | Master Class TCG Coaching"
+          ></meta>
+          <meta
+            property="twitter:description"
+            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
+
+My name is Philips and I am a competitive card game player.
+
+Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
+
+Let me share what I have learned so that you more rapidly grow! 
+
+I offer to you my master class TCG coaching!"
+          ></meta>
+          <meta
+            property="twitter:image"
+            content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          ></meta>
         </Head>
         <body>
           <Main />
