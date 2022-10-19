@@ -32,7 +32,9 @@ My name is Philips and I am a competitive card game player.
 
 Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
 
-Let me share what I have learned so that you more rapidly grow!"
+Let me share what I have learned so that you more rapidly grow!
+
+I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
 
           <meta property="og:type" content="website"></meta>

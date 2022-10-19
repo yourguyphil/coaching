@@ -41,6 +41,8 @@ const Hero = (): JSX.Element => {
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
               Master Class Coaching and Gameplay Review.
+              <br />
+              Gods Unchained Coaching and Magic the Gathering Coaching.
             </Typography>
           </Box>
           <Box

@@ -79,7 +79,7 @@ const Partners = (): JSX.Element => {
               </li>
               <li>Mythic SpellSlingers Player</li>
               <li>Ex Mtg Arena Mythic Player</li>
-              <li>Ex Professional Kaijudo Playerr</li>
+              <li>Ex Professional Kaijudo Player</li>
               <li>Ex Legend Hearthstone Player</li>
             </ul>
             <br />
