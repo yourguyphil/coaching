@@ -48,6 +48,7 @@ const Topbar = ({
           }
           height={1}
           width={1}
+          paddingRight={2}
         />
       </Box>
       <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
