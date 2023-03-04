@@ -53,14 +53,6 @@ const Hero = (): JSX.Element => {
             flexDirection={{ xs: 'column', sm: 'row' }}
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
           >
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              fullWidth={isMd ? false : true}
-            >
-              Start now
-            </Button>
             <Box
               component={Button}
               variant="outlined"

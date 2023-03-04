@@ -34,6 +34,8 @@ Throughout my gaming career I have went through NUMEROUS difficult lessons but a
 
 Let me share what I have learned so that you more rapidly grow!
 
+Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
+
 I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
 
@@ -55,6 +57,8 @@ My name is Philips and I am a competitive card game player.
 Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
 
 Let me share what I have learned so that you more rapidly grow!
+
+Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
 
 I offer to you my master class TCG coaching!"
           ></meta>
@@ -81,6 +85,8 @@ My name is Philips and I am a competitive card game player.
 Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
 
 Let me share what I have learned so that you more rapidly grow! 
+
+Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
 
 I offer to you my master class TCG coaching!"
           ></meta>

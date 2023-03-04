@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { alpha, useTheme } from '@mui/material/styles';
@@ -6,6 +7,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import Head from 'next/head';
 
 const Hero = (): JSX.Element => {
   const theme = useTheme();
@@ -39,6 +41,15 @@ const Hero = (): JSX.Element => {
             </Typography>
           </Box>
           <Box marginBottom={3}>
+            <Head>
+              Master Class Coaching and Gameplay Review.
+              <br />
+              Gods Unchained Coaching and Magic the Gathering Coaching.
+              <meta
+                property="og:title"
+                content="Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!"
+              />
+            </Head>
             <Typography variant="h6" component="p" color="text.secondary">
               Master Class Coaching and Gameplay Review.
               <br />
@@ -50,22 +61,12 @@ const Hero = (): JSX.Element => {
             flexDirection={{ xs: 'column', sm: 'row' }}
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
           >
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              fullWidth={isMd ? false : true}
-              href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
-            >
-              Start now
-            </Button>
             <Box
               component={Button}
               variant="outlined"
               color="primary"
               size="large"
               marginTop={{ xs: 2, sm: 0 }}
-              marginLeft={{ sm: 2 }}
               fullWidth={isMd ? false : true}
               href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
             >

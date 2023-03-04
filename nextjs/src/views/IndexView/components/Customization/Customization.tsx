@@ -44,6 +44,10 @@ const Customization = (): JSX.Element => {
           <br />
           <br />
           Let me share what I have learned so that you more rapidly grow!
+          <br />
+          <br />
+          Improve your skills, Elevate your game, Broaden your tactics, Boost
+          your strategic edge, Become a stronger player!
         </Typography>
         <Box
           display="flex"
