@@ -83,7 +83,7 @@ const Hero = (): JSX.Element => {
               width: '100%',
             }}
           >
-            Featured Startergy Guides!
+            Featured Strategy Guides!
           </Typography>
         </Box>
       </Container>
