@@ -1,4 +1,5 @@
-import React from 'react';
+/* eslint-disable linebreak-style */
+import React, { useEffect, useState } from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -9,78 +10,58 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Grid from '@mui/material/Grid';
 import Avatar from '@mui/material/Avatar';
+import axios, { AxiosError, AxiosResponse } from 'axios';
+import Modal from '@mui/material/Modal';
 
-const mock = [
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
-    description:
-      'Sed ut perspiciatis unde omnis iste natus error sit voluptatem',
-    title: 'Eiusmod tempor incididunt',
-    author: {
-      name: 'Clara Bertoletti',
-      avatar: 'https://assets.maccarianagency.com/avatars/img1.jpg',
-    },
-  },
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
-    description: 'At vero eos et accusamus et iusto odio dignissimos ducimus',
-    title: 'Sed ut perspiciatis',
-    author: {
-      name: 'Jhon Anderson',
-      avatar: 'https://assets.maccarianagency.com/avatars/img2.jpg',
-    },
-    date: '02 Aug',
-  },
-  {
-    image: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
-    description:
-      'Qui blanditiis praesentium voluptatum deleniti atque corrupti',
-    title: 'Unde omnis iste natus',
-    author: {
-      name: 'Chary Smith',
-      avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
-    },
-    date: '05 Mar',
-  },
-];
+export type PromotionInputs = {
+  locationOfPromotion: string;
+  dateOfPromotion: string;
+};
+
+export interface Articles {
+  data: Article[];
+}
+
+export interface Article {
+  id: number;
+  status: string;
+  sort: any;
+  user_created: string;
+  date_created: string;
+  user_updated: string;
+  date_updated: string;
+  title: string;
+  main_image: string;
+  article: string;
+  description: string;
+}
 
 const SimilarStories = (): JSX.Element => {
   const theme = useTheme();
+  const cmsArticleURL = 'https://cms.philipsnguyen.com/items/articles';
+
+  const [articles, setArticles] = useState<Articles>(null);
+
+  useEffect(() => {
+    axios
+      .get(cmsArticleURL)
+      .then((articles: AxiosResponse<Articles>) => {
+        setArticles(articles.data);
+        console.log(articles.data);
+      })
+      .catch((e) => {
+        const err = e as AxiosError;
+        console.log(err.response.data);
+      });
+  }, []);
+
   return (
     <Box>
-      <Box
-        display={'flex'}
-        justifyContent={'space-between'}
-        alignItems={{ xs: 'flex-start', sm: 'center' }}
-        flexDirection={{ xs: 'column', sm: 'row' }}
-        marginBottom={4}
-      >
-        <Box>
-          <Typography fontWeight={700} variant={'h6'} gutterBottom>
-            Similar stories
-          </Typography>
-          <Typography color={'text.secondary'}>
-            Here’s what we’ve been up to recently.
-          </Typography>
-        </Box>
-        <Box display="flex" marginTop={{ xs: 2, md: 0 }}>
-          <Box
-            component={Button}
-            variant="outlined"
-            color="primary"
-            size="large"
-            marginLeft={2}
-          >
-            View all
-          </Box>
-        </Box>
-      </Box>
       <Grid container spacing={4}>
-        {mock.map((item, i) => (
+        {articles?.data.map((item, i) => (
           <Grid item xs={12} md={4} key={i}>
             <Box
-              component={'a'}
-              href={''}
+              component={'div'}
               display={'block'}
               width={1}
               height={1}
@@ -89,6 +70,7 @@ const SimilarStories = (): JSX.Element => {
                 transition: 'all .2s ease-in-out',
                 '&:hover': {
                   transform: `translateY(-${theme.spacing(1 / 2)})`,
+                  cursor: 'pointer',
                 },
               }}
             >
@@ -102,7 +84,7 @@ const SimilarStories = (): JSX.Element => {
                 sx={{ backgroundImage: 'none' }}
               >
                 <CardMedia
-                  image={item.image}
+                  image={item.main_image}
                   title={item.title}
                   sx={{
                     height: { xs: 300, md: 360 },
@@ -149,20 +131,7 @@ const SimilarStories = (): JSX.Element => {
                     display={'flex'}
                     justifyContent={'space-between'}
                     alignItems={'center'}
-                  >
-                    <Box display={'flex'} alignItems={'center'}>
-                      <Avatar
-                        src={item.author.avatar}
-                        sx={{ marginRight: 1 }}
-                      />
-                      <Typography color={'text.secondary'}>
-                        {item.author.name}
-                      </Typography>
-                    </Box>
-                    <Typography color={'text.secondary'}>
-                      {item.date}
-                    </Typography>
-                  </Box>
+                  ></Box>
                 </Box>
               </Box>
             </Box>

@@ -3,16 +3,12 @@ const pages = {
     {
       title: 'Gods Unchained Referral',
       href: '/referral',
-    },
-    {
-      title: 'Comming Soon',
-      href: '/404',
     }
   ],
   freecoaching: [
     {
-      title: 'Comming Soon',
-      href: '/404',
+      title: 'Featured Guides!',
+      href: '/featured',
     }
   ]
 };

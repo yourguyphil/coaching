@@ -40,7 +40,6 @@ const Hero = (): JSX.Element => {
         sx={{
           position: 'absolute',
           objectFit: 'cover',
-          /* support for plugin https://github.com/bfred-it/object-fit-images */
           fontFamily: 'object-fit: cover;',
           top: 0,
           left: 0,
@@ -49,9 +48,9 @@ const Hero = (): JSX.Element => {
           zIndex: -1,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundPosition: 'center center',
+          backgroundPosition: 'center bottom',
           backgroundImage:
-            'url(https://assets.maccarianagency.com/backgrounds/img3.jpg)',
+            'url(https://philipsweb.blob.core.windows.net/$web/Banner.png)',
         }}
       />
       <Box
@@ -75,28 +74,16 @@ const Hero = (): JSX.Element => {
               fontWeight: 400,
               color: 'common.white',
               marginBottom: 2,
+              textAlign: 'center',
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '100%',
             }}
           >
-            Remote work is the future, but should you go remote?
+            Featured Startergy Guides!
           </Typography>
-          <Box display={'flex'} alignItems={'center'}>
-            <Avatar
-              sx={{ width: 60, height: 60, marginRight: 2 }}
-              src={'https://assets.maccarianagency.com/avatars/img3.jpg'}
-            />
-            <ListItemText
-              sx={{ margin: 0 }}
-              primary={'Jhon Anderson'}
-              secondary={'May 19, 2021'}
-              primaryTypographyProps={{
-                variant: 'h6',
-                sx: { color: 'common.white' },
-              }}
-              secondaryTypographyProps={{
-                sx: { color: alpha('#ffffff', 0.8) },
-              }}
-            />
-          </Box>
         </Box>
       </Container>
     </Box>
