@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
@@ -5,10 +6,13 @@ import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import { useTheme } from '@mui/material/styles';
+import { Facebook, Twitter, Reddit } from 'react-sharingbuttons';
+import 'react-sharingbuttons/dist/main.css';
 
 const Footer = (): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
+  const shareUrl = 'coaching.philipsnguyen.com';
 
   return (
     <Grid container spacing={2}>
@@ -24,7 +28,6 @@ const Footer = (): JSX.Element => {
             display={'flex'}
             component="a"
             href="/"
-            title="theFront"
             width={{ xs: 400, md: 480 }}
           >
             <Box
@@ -36,6 +39,28 @@ const Footer = (): JSX.Element => {
               }
               height={1}
               width={1}
+            />
+          </Box>
+          <Box
+            display={'flex'}
+            component="a"
+            href="/"
+            width={{ xs: 400, md: 480 }}
+          >
+            <Facebook
+              url={shareUrl}
+              text="Facebook"
+              shareText="Checkout this awesome Trading Card Game Coaching!"
+            />
+            <Twitter
+              url={shareUrl}
+              text="Twitter"
+              shareText="Checkout this awesome Trading Card Game Coaching!"
+            />
+            <Reddit
+              url={shareUrl}
+              text="Reddit"
+              shareText="Checkout this awesome Trading Card Game Coaching!"
             />
           </Box>
         </Box>

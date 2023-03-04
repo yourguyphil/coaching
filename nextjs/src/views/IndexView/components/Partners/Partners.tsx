@@ -12,7 +12,7 @@ import CardContent from '@mui/material/CardContent';
 export const mock = [
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/godslogo.png',
-    name: 'Gods Unchained',
+    name: 'Gods Unchained | GU',
   },
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/placeholder.png',
@@ -20,7 +20,7 @@ export const mock = [
   },
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/mtglogo.png',
-    name: 'Magic the Gathering',
+    name: 'Magic the Gathering | MTG',
   },
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/placeholder.png',
@@ -44,7 +44,7 @@ export const mock = [
   },
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/mtgalogo.png',
-    name: 'Magic the gathering Arena',
+    name: 'Magic the Gathering Arena | MTGA',
   },
 ];
 

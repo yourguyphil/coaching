@@ -36,7 +36,7 @@ const Customization = (): JSX.Element => {
         >
           <br />
           My name is Philips and I am a competitive card game player based in
-          the US.
+          the US. (GU | MTG)
           <br />
           <br />
           Throughout my gaming career I have went through <b>NUMEROUS</b>{' '}
@@ -67,7 +67,7 @@ const Customization = (): JSX.Element => {
               src={
                 'https://philipsweb.blob.core.windows.net/$web/TopRanked.PNG'
               }
-              alt="..."
+              alt="Gods Unchained Ranked Top Player"
               effect="blur"
               boxShadow={3}
               borderRadius={2}
@@ -92,7 +92,7 @@ const Customization = (): JSX.Element => {
               height={1}
               width={1}
               src={'https://philipsweb.blob.core.windows.net/$web/Tourney.PNG'}
-              alt="..."
+              alt="Gods Unchained Top Weekend Ranked (GU)"
               effect="blur"
               boxShadow={3}
               borderRadius={2}
@@ -113,7 +113,7 @@ const Customization = (): JSX.Element => {
               src={
                 'https://philipsweb.blob.core.windows.net/$web/gpphoenix.PNG'
               }
-              alt="..."
+              alt="Magic The Gathering Top Finish"
               effect="blur"
               boxShadow={3}
               borderRadius={2}

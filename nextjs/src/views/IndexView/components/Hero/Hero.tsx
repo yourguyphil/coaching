@@ -91,7 +91,7 @@ const Hero = (): JSX.Element => {
           height={1}
           width={1}
           src={'https://philipsweb.blob.core.windows.net/$web/Yourguyphil.jpg'}
-          alt="..."
+          alt="Master Class Gods Unchained Coaching | Master Class Magic The Gathering Coaching"
           effect="blur"
           boxShadow={3}
           borderRadius={2}

@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/display-name */
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
@@ -19,20 +20,18 @@ export default class MyDocument extends Document {
             href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
           />
           <meta name="theme-color" content="#ffffff" />
-          <title>Philips Nguyen | Master Class TCG Coaching</title>
+          <title>
+            Philips Nguyen | Master Class TCG Coaching | Gods Unchained | Magic
+            the Gathering
+          </title>
           <meta
             name="title"
-            content="Philips Nguyen | Master Class TCG Coaching"
+            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            the Gathering (MTG)"
           ></meta>
           <meta
             name="description"
-            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
-
-My name is Philips and I am a competitive card game player.
-
-Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
-
-Let me share what I have learned so that you more rapidly grow!
+            content="Want to maximize your strategic advantage playing card games?
 
 Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
 
@@ -46,21 +45,16 @@ I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="og:title"
-            content="Philips Nguyen | Master Class TCG Coaching"
+            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            the Gathering (MTG)"
           ></meta>
           <meta
             property="og:description"
-            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
+            content="Want to maximize your strategic advantage playing card games?
 
-My name is Philips and I am a competitive card game player.
-
-Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
-
-Let me share what I have learned so that you more rapidly grow!
-
-Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
-
-I offer to you my master class TCG coaching!"
+            Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
+            
+            I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="og:image"
@@ -74,21 +68,16 @@ I offer to you my master class TCG coaching!"
           ></meta>
           <meta
             property="twitter:title"
-            content="Philips Nguyen | Master Class TCG Coaching"
+            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            the Gathering (MTG)"
           ></meta>
           <meta
             property="twitter:description"
-            content="Want to maximize your strategic advantage playing card games? For example: Gods Unchained or Magic the Gathering? Let's get better, together!
+            content="Want to maximize your strategic advantage playing card games?
 
-My name is Philips and I am a competitive card game player.
-
-Throughout my gaming career I have went through NUMEROUS difficult lessons but also got to enjoy a lot of success.
-
-Let me share what I have learned so that you more rapidly grow! 
-
-Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
-
-I offer to you my master class TCG coaching!"
+            Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
+            
+            I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="twitter:image"
