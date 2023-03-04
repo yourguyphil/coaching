@@ -26,7 +26,16 @@ const Customization = (): JSX.Element => {
             fontWeight: 700,
           }}
         >
-          Never Stop Improving Your Game!
+          <h1>
+            <u>Never Stop Improving Your Game!</u>
+            <br />
+            <br />
+            Gods Unchained Coaching
+            <br />
+            &
+            <br />
+            Magic the Gathering Coaching.
+          </h1>
         </Typography>
         <Typography
           variant="h6"
