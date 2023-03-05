@@ -11,6 +11,7 @@ interface Props {
   pages: {
     portfolio: Array<PageItem>;
     freecoaching: Array<PageItem>;
+    aboutme: Array<PageItem>;
   };
 }
 
