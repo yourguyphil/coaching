@@ -44,7 +44,7 @@ const Hero = (): JSX.Element => {
             <Head>
               Master Class Coaching and Gameplay Review.
               <br />
-              Gods Unchained Coaching and Magic the Gathering Coaching.
+              Gods Unchained Coaching and Magic the Gathering Coaching
               <meta
                 property="og:title"
                 content="Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!"
@@ -53,7 +53,7 @@ const Hero = (): JSX.Element => {
             <Typography variant="h6" component="p" color="text.secondary">
               Master Class Coaching and Gameplay Review.
               <br />
-              Gods Unchained Coaching and Magic the Gathering Coaching.
+              Gods Unchained Coaching and Magic the Gathering Coaching
             </Typography>
           </Box>
           <Box
