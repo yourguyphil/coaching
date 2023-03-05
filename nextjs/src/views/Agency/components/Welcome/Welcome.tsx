@@ -12,7 +12,7 @@ const Welcome = (): JSX.Element => {
   const GridItemHeadlineBlock = () => (
     <Box
       sx={{
-        paddingTop: 15,
+        paddingTop: 5,
       }}
     >
       <Typography
@@ -50,7 +50,16 @@ const Welcome = (): JSX.Element => {
 
   return (
     <Box>
-      <Grid container spacing={4}>
+      <Grid container>
+        <Image
+          src="https://philipsweb.blob.core.windows.net/$web/jace2.jpg"
+          style={{
+            width: '30%',
+            height: '30%',
+            objectFit: 'cover',
+            border: '5px solid white',
+          }}
+        />
         <Grid item xs={12}>
           <Box
             width="100%"
@@ -58,15 +67,6 @@ const Welcome = (): JSX.Element => {
             display="flex"
             justifyContent={'center'}
           >
-            <Image
-              src="https://philipsweb.blob.core.windows.net/$web/jace2.jpg"
-              style={{
-                width: '90%',
-                height: '90%',
-                objectFit: 'cover',
-                border: '5px solid white',
-              }}
-            />
             <GridItemHeadlineBlock />
           </Box>
         </Grid>
