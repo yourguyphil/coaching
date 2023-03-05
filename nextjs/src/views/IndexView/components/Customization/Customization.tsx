@@ -34,7 +34,7 @@ const Customization = (): JSX.Element => {
             <br />
             &
             <br />
-            Magic the Gathering Coaching.
+            Magic the Gathering Coaching
           </h1>
         </Typography>
         <Typography
