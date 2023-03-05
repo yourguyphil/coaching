@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import Image from 'mui-image';
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -9,7 +10,11 @@ const Welcome = (): JSX.Element => {
   const theme = useTheme();
 
   const GridItemHeadlineBlock = () => (
-    <Box>
+    <Box
+      sx={{
+        paddingTop: 15,
+      }}
+    >
       <Typography
         variant="h3"
         align={'center'}
@@ -53,6 +58,15 @@ const Welcome = (): JSX.Element => {
             display="flex"
             justifyContent={'center'}
           >
+            <Image
+              src="https://philipsweb.blob.core.windows.net/$web/jace2.jpg"
+              style={{
+                width: '90%',
+                height: '90%',
+                objectFit: 'cover',
+                border: '5px solid white',
+              }}
+            />
             <GridItemHeadlineBlock />
           </Box>
         </Grid>
