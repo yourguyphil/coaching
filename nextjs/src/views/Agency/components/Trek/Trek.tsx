@@ -3,6 +3,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const Trek = (): JSX.Element => {
   const theme = useTheme();
@@ -32,6 +33,15 @@ const Trek = (): JSX.Element => {
       >
         Magic The Gathering: Legacy
       </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://www.mtggoldfish.com/archetype/legacy-izzet-delver#paper"
+        >
+          View Decklist
+        </Button>
+      </Box>
     </Box>
   );
 };
