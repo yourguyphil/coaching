@@ -3,6 +3,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const Nike = (): JSX.Element => {
   const theme = useTheme();
@@ -19,7 +20,7 @@ const Nike = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Nike
+        Mono Blue Spirits
       </Typography>
       <Typography
         variant="h6"
@@ -30,8 +31,17 @@ const Nike = (): JSX.Element => {
           color: theme.palette.common.white,
         }}
       >
-        Just do it
+        Magic The Gathering: Pioneer
       </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://www.mtggoldfish.com/archetype/pioneer-mono-blue-spirits#paper"
+        >
+          View Decklist
+        </Button>
+      </Box>
     </Box>
   );
 };

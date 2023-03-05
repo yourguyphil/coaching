@@ -9,6 +9,7 @@ interface Props {
   pages: {
     portfolio: Array<PageItem>;
     freecoaching: Array<PageItem>;
+    aboutme: Array<PageItem>;
   };
 }
 
@@ -16,7 +17,11 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
 
-  const { portfolio: portfolioPages, freecoaching: freecoachingPages } = pages;
+  const {
+    portfolio: portfolioPages,
+    freecoaching: freecoachingPages,
+    aboutme: aboutmePages,
+  } = pages;
 
   return (
     <Box>
@@ -46,6 +51,9 @@ const SidebarNav = ({ pages }: Props): JSX.Element => {
         </Box>
         <Box>
           <NavItem title={'Free Stratergy Guides'} items={freecoachingPages} />
+        </Box>
+        <Box>
+          <NavItem title={'About Me'} items={aboutmePages} />
         </Box>
         <Box marginTop={1}>
           <Button

@@ -3,6 +3,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const Curology = (): JSX.Element => {
   const theme = useTheme();
@@ -19,7 +20,7 @@ const Curology = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Curology
+        Heloid Taxes
       </Typography>
       <Typography
         variant="h6"
@@ -30,8 +31,17 @@ const Curology = (): JSX.Element => {
           color: theme.palette.common.white,
         }}
       >
-        Curology custom skincare
+        Magic The Gathering: cEDH
       </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://www.mtggoldfish.com/archetype/heliod-sun-crowned#paper"
+        >
+          View Decklist
+        </Button>
+      </Box>
     </Box>
   );
 };

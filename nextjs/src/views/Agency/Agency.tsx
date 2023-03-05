@@ -105,16 +105,14 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'150vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
       >
         <Box
           className={'jarallax-img'}
-          sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img48.jpg',
-          )}
+          sx={styles('https://philipsweb.blob.core.windows.net/$web/war.png')}
         />
         <Container>
           <Goby />
@@ -125,28 +123,16 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'150vh'}
         display={'flex'}
         alignItems={'center'}
       >
         <Box
           className={'jarallax-img'}
-          sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img44.jpg',
-          )}
+          sx={styles('https://philipsweb.blob.core.windows.net/$web/murk.png')}
         />
         <Container>
           <Larq />
-        </Container>
-      </Box>
-      <Box
-        minHeight={'100vh'}
-        display={'flex'}
-        alignItems={'center'}
-        bgcolor={'alternate.main'}
-      >
-        <Container>
-          <Process />
         </Container>
       </Box>
       <Box
@@ -154,7 +140,7 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'150vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
@@ -162,7 +148,7 @@ const Agency = (): JSX.Element => {
         <Box
           className={'jarallax-img'}
           sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img45.jpg',
+            'https://philipsweb.blob.core.windows.net/$web/spirit.png',
           )}
         />
         <Container>
@@ -174,7 +160,7 @@ const Agency = (): JSX.Element => {
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'150vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
@@ -182,7 +168,7 @@ const Agency = (): JSX.Element => {
         <Box
           className={'jarallax-img'}
           sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img43.jpg',
+            'https://philipsweb.blob.core.windows.net/$web/delver.png',
           )}
         />
         <Container>
@@ -190,21 +176,11 @@ const Agency = (): JSX.Element => {
         </Container>
       </Box>
       <Box
-        minHeight={'100vh'}
-        display={'flex'}
-        alignItems={'center'}
-        bgcolor={'alternate.main'}
-      >
-        <Container>
-          <Reviews />
-        </Container>
-      </Box>
-      <Box
         className={'jarallax'}
         data-jarallax
         data-speed="0.2"
         position={'relative'}
-        minHeight={'100vh'}
+        minHeight={'150vh'}
         display={'flex'}
         alignItems={'center'}
         id="agency__portfolio-item--js-scroll"
@@ -212,41 +188,11 @@ const Agency = (): JSX.Element => {
         <Box
           className={'jarallax-img'}
           sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img47.jpg',
+            'https://philipsweb.blob.core.windows.net/$web/heliod.png',
           )}
         />
         <Container>
           <Curology />
-        </Container>
-      </Box>
-      <Box
-        className={'jarallax'}
-        data-jarallax
-        data-speed="0.2"
-        position={'relative'}
-        minHeight={'100vh'}
-        display={'flex'}
-        alignItems={'center'}
-        id="agency__portfolio-item--js-scroll"
-      >
-        <Box
-          className={'jarallax-img'}
-          sx={styles(
-            'https://assets.maccarianagency.com/backgrounds/img46.jpg',
-          )}
-        />
-        <Container>
-          <Nike2 />
-        </Container>
-      </Box>
-      <Box
-        minHeight={'100vh'}
-        display={'flex'}
-        alignItems={'center'}
-        bgcolor={'alternate.main'}
-      >
-        <Container>
-          <Contact />
         </Container>
       </Box>
     </Main>

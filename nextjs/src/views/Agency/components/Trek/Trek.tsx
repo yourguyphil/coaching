@@ -19,7 +19,7 @@ const Trek = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Trek
+        Izzet Delver
       </Typography>
       <Typography
         variant="h6"
@@ -30,7 +30,7 @@ const Trek = (): JSX.Element => {
           color: theme.palette.common.white,
         }}
       >
-        The world's best bikes and cycling gear
+        Magic The Gathering: Legacy
       </Typography>
     </Box>
   );

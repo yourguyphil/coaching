@@ -13,6 +13,7 @@ interface Props {
   pages: {
     portfolio: Array<PageItem>;
     freecoaching: Array<PageItem>;
+    aboutme: Array<PageItem>;
   };
   colorInvert?: boolean;
 }
@@ -24,7 +25,11 @@ const Topbar = ({
 }: Props): JSX.Element => {
   const theme = useTheme();
   const { mode } = theme.palette;
-  const { portfolio: portfolioPages, freecoaching: freecoachingPages } = pages;
+  const {
+    portfolio: portfolioPages,
+    freecoaching: freecoachingPages,
+    aboutme: aboutmePages,
+  } = pages;
 
   return (
     <Box
@@ -66,6 +71,14 @@ const Topbar = ({
             title={'Free Stratergy Guides'}
             id={'freecoaching-pages'}
             items={freecoachingPages}
+            colorInvert={colorInvert}
+          />
+        </Box>
+        <Box marginLeft={4}>
+          <NavItem
+            title={'About Me'}
+            id={'aboutme-pages'}
+            items={aboutmePages}
             colorInvert={colorInvert}
           />
         </Box>

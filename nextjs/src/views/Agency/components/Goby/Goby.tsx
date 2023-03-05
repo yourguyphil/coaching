@@ -3,6 +3,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Button } from '@mui/material';
 
 const Goby = (): JSX.Element => {
   const theme = useTheme();
@@ -19,7 +20,7 @@ const Goby = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Goby
+        Aggro War
       </Typography>
       <Typography
         variant="h6"
@@ -30,8 +31,17 @@ const Goby = (): JSX.Element => {
           color: theme.palette.common.white,
         }}
       >
-        Electric toothbrush, designed for you
+        God's Unchained Ranked
       </Typography>
+      <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+        <Button
+          variant="contained"
+          color="primary"
+          href="https://gudecks.com/meta/archetypes/Frenzied%20Aggro%20War"
+        >
+          View Decklist
+        </Button>
+      </Box>
     </Box>
   );
 };

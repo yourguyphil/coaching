@@ -18,7 +18,7 @@ const Welcome = (): JSX.Element => {
           fontWeight: 900,
         }}
       >
-        We craft beautiful websites and digital products
+        My Current Decks Of Choice!
       </Typography>
       <Typography
         variant="h6"
@@ -29,39 +29,17 @@ const Welcome = (): JSX.Element => {
           fontWeight: 400,
         }}
       >
-        Tell us your project requirements, budget, and timeline,
-        <br /> and we will connect you with up to four companies that match your
-        needs – all for free.
+        <br />
+        Choosing the right deck is like choosing a weapon for battle.
+        <br />
+        <br />
+        It must fit your <u>style</u>, complement your <u>strengths</u>, and
+        give you the best chance to emerge{' '}
+        <u>
+          <b>victorious</b>
+        </u>
+        !
       </Typography>
-    </Box>
-  );
-
-  const GridItemPartnersBlock = () => (
-    <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
-      {[
-        'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-        'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
-      ].map((item, i) => (
-        <Box maxWidth={80} marginTop={2} marginRight={4} key={i}>
-          <Box
-            component="img"
-            height={1}
-            width={1}
-            src={item}
-            alt="..."
-            sx={{
-              filter:
-                theme.palette.mode === 'dark'
-                  ? 'brightness(0) invert(0.7)'
-                  : 'contrast(0) brightness(0)',
-            }}
-          />
-        </Box>
-      ))}
     </Box>
   );
 
@@ -76,16 +54,6 @@ const Welcome = (): JSX.Element => {
             justifyContent={'center'}
           >
             <GridItemHeadlineBlock />
-          </Box>
-        </Grid>
-        <Grid item xs={12}>
-          <Box
-            width="100%"
-            height="100%"
-            display="flex"
-            justifyContent={'center'}
-          >
-            <GridItemPartnersBlock />
           </Box>
         </Grid>
       </Grid>
