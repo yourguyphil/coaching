@@ -83,7 +83,30 @@ const Hero = (): JSX.Element => {
               width: '100%',
             }}
           >
-            Featured Strategy Guides!
+            Featured Strategy Guides
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            textAlign: 'center',
+            marginTop: 25,
+          }}
+        >
+          <Typography
+            variant="body1"
+            sx={{
+              fontWeight: 400,
+              color: 'common.white',
+              marginBottom: 2,
+            }}
+          >
+            <i>
+              Curated to elevate your game in the world of Trading Card Games.
+              <br />
+              <br />
+              Designed to span ALL tcgs. MTG Stratergy Guides, Gods Unchained
+              Strategy Guides, and more!
+            </i>
           </Typography>
         </Box>
       </Container>
