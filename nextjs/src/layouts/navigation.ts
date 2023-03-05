@@ -8,7 +8,7 @@ const pages = {
   freecoaching: [
     {
       title: 'Featured Guides!',
-      href: '/featured',
+      href: '/stratergy-guides',
     }
   ]
 };
