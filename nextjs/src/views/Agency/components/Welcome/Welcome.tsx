@@ -54,8 +54,8 @@ const Welcome = (): JSX.Element => {
         <Image
           src="https://philipsweb.blob.core.windows.net/$web/jace2.jpg"
           style={{
-            width: '30%',
-            height: '30%',
+            width: '50%',
+            height: '50%',
             objectFit: 'cover',
             border: '5px solid white',
           }}
