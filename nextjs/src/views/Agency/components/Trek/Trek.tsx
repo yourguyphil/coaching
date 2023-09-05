@@ -20,7 +20,7 @@ const Trek = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Izzet Delver
+        UB Shadow
       </Typography>
       <Typography
         variant="h6"
@@ -37,7 +37,7 @@ const Trek = (): JSX.Element => {
         <Button
           variant="contained"
           color="primary"
-          href="https://www.mtggoldfish.com/archetype/legacy-izzet-delver#paper"
+          href="https://www.mtggoldfish.com/archetype/legacy-death-s-shadow#paper"
         >
           View Decklist
         </Button>

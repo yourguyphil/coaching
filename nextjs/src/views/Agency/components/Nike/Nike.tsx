@@ -20,7 +20,7 @@ const Nike = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Mono Blue Spirits
+        UW Spirits
       </Typography>
       <Typography
         variant="h6"
@@ -37,7 +37,7 @@ const Nike = (): JSX.Element => {
         <Button
           variant="contained"
           color="primary"
-          href="https://www.mtggoldfish.com/archetype/pioneer-mono-blue-spirits#paper"
+          href="https://www.mtggoldfish.com/archetype/pioneer-azorius-spirits#paper"
         >
           View Decklist
         </Button>
