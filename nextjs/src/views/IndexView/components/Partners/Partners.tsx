@@ -27,8 +27,8 @@ export const mock = [
     name: 'Blank',
   },
   {
-    logo: 'https://philipsweb.blob.core.windows.net/$web/hslogo.png',
-    name: 'Hearthstone',
+    logo: 'https://philipsweb.blob.core.windows.net/$web/pocket.png',
+    name: 'Pokemon Pocket',
   },
   {
     logo: 'https://philipsweb.blob.core.windows.net/$web/placeholder.png',
@@ -73,10 +73,14 @@ const Partners = (): JSX.Element => {
             <br />
             Resume:
             <ul>
-              <li>Mythic Gods Unchained Player</li>
               <li>
-                Professional Magic the Gathering Player with $1600+ earnings
+                Professional Magic the Gathering Player with $2000+ earnings
               </li>
+              <li>Genetic Apex Top Emblem Holder in Pokemon Pocket</li>
+              <li>
+                2024 Dreamhack Modern Champion
+              </li>
+              <li>Mythic Gods Unchained Player</li> 
               <li>Mythic SpellSlingers Player</li>
               <li>Ex Mtg Arena Mythic Player</li>
               <li>Ex Professional Kaijudo Player</li>

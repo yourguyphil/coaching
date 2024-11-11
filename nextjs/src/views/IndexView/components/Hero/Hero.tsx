@@ -44,7 +44,7 @@ const Hero = (): JSX.Element => {
             <Head>
               Master Class Coaching and Gameplay Review.
               <br />
-              Gods Unchained Coaching and Magic the Gathering Coaching
+              Magic the Gathering Coaching, Pokemon Pocket, and Lorcana Coaching
               <meta
                 property="og:title"
                 content="Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!"
@@ -53,7 +53,7 @@ const Hero = (): JSX.Element => {
             <Typography variant="h6" component="p" color="text.secondary">
               Master Class Coaching and Gameplay Review.
               <br />
-              Gods Unchained Coaching and Magic the Gathering Coaching
+              Magic the Gathering Coaching, Pokemon Pocket, and Lorcana Coaching
             </Typography>
           </Box>
           <Box
@@ -91,7 +91,7 @@ const Hero = (): JSX.Element => {
           height={1}
           width={1}
           src={'https://philipsweb.blob.core.windows.net/$web/Yourguyphil.jpg'}
-          alt="Master Class Gods Unchained Coaching | Master Class Magic The Gathering Coaching"
+          alt="Master Class Magic The Gathering Coaching | Master Class Lorcana Coaching | Master Class Pokemon Pocket Coaching"
           effect="blur"
           boxShadow={3}
           borderRadius={2}
