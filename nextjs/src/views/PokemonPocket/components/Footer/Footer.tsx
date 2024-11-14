@@ -22,7 +22,7 @@ const Footer = (): JSX.Element => {
             fontWeight: 'medium',
           }}
         >
-          Didn't find what you are looking for?
+          Personalized Improvement with 1-on-1 Coaching!
         </Typography>
       </Box>
       <Box
@@ -37,36 +37,9 @@ const Footer = (): JSX.Element => {
           color="primary"
           size="large"
           fullWidth={!isMd}
-          startIcon={
-            <svg
-              width={24}
-              height={24}
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-              />
-            </svg>
-          }
+          href='https://www.fiverr.com/s/0b6pzvE'
         >
-          Download the guide
-        </Box>
-        <Box
-          component={Button}
-          variant="outlined"
-          color="primary"
-          size="large"
-          fullWidth={!isMd}
-          marginTop={{ xs: 1, sm: 0 }}
-          marginLeft={{ sm: 2 }}
-        >
-          Ask a question
+          Start Now
         </Box>
       </Box>
     </Box>
