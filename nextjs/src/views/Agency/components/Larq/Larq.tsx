@@ -20,7 +20,7 @@ const Larq = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        Izzet Murktide
+        Dimir Frogtide
       </Typography>
       <Typography
         variant="h6"
@@ -37,7 +37,7 @@ const Larq = (): JSX.Element => {
         <Button
           variant="contained"
           color="primary"
-          href="https://www.mtggoldfish.com/archetype/modern-murktide-regent#paper"
+          href="https://www.mtggoldfish.com/archetype/modern-dimir-murktide#paper"
         >
           View Decklist
         </Button>

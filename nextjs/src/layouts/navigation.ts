@@ -35,9 +35,13 @@ const pages = {
   ],
   freecoaching: [
     {
-      title: 'Featured Guides',
+      title: 'Featured General TCG Guides',
       href: '/stratergy-guides',
-    }
+    }, 
+    {
+      title: 'Exclusive Pokemon Pocket Guide',
+      href: '/pokemon-pocket',
+    }, 
   ],
   aboutme: [
     {

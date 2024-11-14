@@ -6,7 +6,7 @@ import Main from 'layouts/Main';
 import Container from 'components/Container';
 import { Content, Footer, Headline } from './components';
 
-const Faq = (): JSX.Element => {
+const PokemonPocket = (): JSX.Element => {
   const theme = useTheme();
   return (
     <Main>
@@ -36,4 +36,4 @@ const Faq = (): JSX.Element => {
   );
 };
 
-export default Faq;
+export default PokemonPocket;
