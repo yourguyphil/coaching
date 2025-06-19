@@ -20,7 +20,7 @@ const Nike = (): JSX.Element => {
           textTransform: 'uppercase',
         }}
       >
-        UW Spirits
+        Izzet Phoenix
       </Typography>
       <Typography
         variant="h6"
@@ -37,7 +37,7 @@ const Nike = (): JSX.Element => {
         <Button
           variant="contained"
           color="primary"
-          href="https://www.mtggoldfish.com/archetype/pioneer-azorius-spirits#paper"
+          href="https://www.mtggoldfish.com/deck/6755837#paper"
         >
           View Decklist
         </Button>

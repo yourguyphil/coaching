@@ -30,11 +30,15 @@ const Customization = (): JSX.Element => {
             <u>Never Stop Improving Your Game!</u>
             <br />
             <br />
-            Gods Unchained Coaching
+            Magic the Gathering Coaching
             <br />
             &
             <br />
-            Magic the Gathering Coaching
+            Pokemon Pocket Coaching
+            <br />
+            &
+            <br />
+            Lorcana Coaching
           </h1>
         </Typography>
         <Typography
@@ -45,7 +49,7 @@ const Customization = (): JSX.Element => {
         >
           <br />
           My name is Philips and I am a competitive card game player based in
-          the US. (GU | MTG)
+          the US. (MTG | Lorcana | Pokemon Pocket)
           <br />
           <br />
           Throughout my gaming career I have went through <b>NUMEROUS</b>{' '}

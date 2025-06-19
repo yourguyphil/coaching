@@ -21,12 +21,12 @@ export default class MyDocument extends Document {
           />
           <meta name="theme-color" content="#ffffff" />
           <title>
-            Philips Nguyen | Master Class TCG Coaching | Gods Unchained | Magic
-            the Gathering
+            Philips Nguyen | Master Class TCG Coaching | Pokemon Pocket | Lorcana | Magic
+            the Gathering | Gods Unchained
           </title>
           <meta
             name="title"
-            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            content="Philips Nguyen | Master Class TCG Coaching | Pokemon Pocket | Lorcana | Gods Unchained (GU) | Magic
             the Gathering (MTG)"
           ></meta>
           <meta
@@ -35,7 +35,7 @@ export default class MyDocument extends Document {
 
 Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
 
-I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
+I offer premier Pokemon Pocket Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
 
           <meta property="og:type" content="website"></meta>
@@ -45,7 +45,7 @@ I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="og:title"
-            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            content="Philips Nguyen | Master Class TCG Coaching | Pokemon Pocket | Lorcana | Gods Unchained (GU) | Magic
             the Gathering (MTG)"
           ></meta>
           <meta
@@ -54,7 +54,7 @@ I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
 
             Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
             
-            I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
+            I offer premier Pokemon Pocket Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="og:image"
@@ -68,7 +68,7 @@ I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="twitter:title"
-            content="Philips Nguyen | Master Class TCG Coaching | Gods Unchained (GU) | Magic
+            content="Philips Nguyen | Master Class TCG Coaching | Pokemon Pocket | Lorcana | Gods Unchained (GU) | Magic
             the Gathering (MTG)"
           ></meta>
           <meta
@@ -77,7 +77,7 @@ I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
 
             Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
             
-            I offer premier Gods Unchained Coaching and Magic the Gathering Coaching!"
+            I offer premier Pokemon Pocket Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
           ></meta>
           <meta
             property="twitter:image"
