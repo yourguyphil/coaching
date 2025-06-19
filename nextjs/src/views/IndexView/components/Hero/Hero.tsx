@@ -44,7 +44,7 @@ const Hero = (): JSX.Element => {
             <Head>
               Master Class Coaching and Gameplay Review.
               <br />
-              Gods Unchained Coaching and Magic the Gathering Coaching
+              Gods Unchained Coaching and Magic the Gathering Coaching.
               <meta
                 property="og:title"
                 content="Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!"
@@ -68,7 +68,7 @@ const Hero = (): JSX.Element => {
               size="large"
               marginTop={{ xs: 2, sm: 0 }}
               fullWidth={isMd ? false : true}
-              href="https://www.fiverr.com/philipsnguyen/provide-competitive-gods-unchained-coaching"
+              href="https://www.fiverr.com/philipsnguyen/build-or-tune-a-deck-of-your-choice-mtg-or-gods-unchained?context_referrer=gig_page&source=other_gigs_by&ref_ctx_id=fb59be5574254dd0abb5f52ef0da6edc&pckg_id=1&pos=3&seller_online=true&imp_id=e2f8c0af-42e9-4f8f-ba95-889e516c616b"
             >
               Learn more
             </Box>
