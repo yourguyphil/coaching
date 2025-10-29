@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
           <script
             defer
             data-domain="coaching.philipsnguyen.com"
-            src="https://plausible.io/js/plausible.js"
+            src="https://plausible.philipsnguyen.com/js/script.js"
           ></script>
           <link
             rel="shortcut icon"
