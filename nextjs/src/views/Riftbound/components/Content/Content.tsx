@@ -95,32 +95,32 @@ const Content = (): JSX.Element => {
       </Box>
       <Box marginBottom={6}>
         <FaqGroupItem
-          title={'How to Win More in Riftbound: Timing Actions and Reactions'}
+          title={'How to Win More in Riftbound: Timing Actions & Reactions'}
           items={[
             {
               title: 'Overview',
               subtitle:
-                'In Riftbound, when you play matters just as much as what you play.\n\nEvery turn is a dance of actions and reactions - deciding whether to strike first, hold back, or respond at the perfect moment. Understanding timing is how you turn average cards into high-impact plays.\n\nAt its core, this lesson is about priority, information, and control.\n\nKnowing when to act - and when to wait - lets you gain more value from each rune, bluff effectively, and read your opponent\'s plans before they unfold.',
+                'Winning tight games often comes down to when you act, not just what you play.\n\n Riftbound\'s timing system (Open vs. Closed states, Chains, Showdowns, Focus/Priority, Action/Reaction) rewards the player who waits, gathers info, and then strikes at the last legal moment.\n\n Mastering this lets you maximize the impact of your cards, blank enemy cards by weakening their utility, and win key showdowns.',
             },
             {
-              title: 'Point 1: Understanding Priority and Information',
+              title: 'Point 1: The "Last Possible Second" Philosophy',
               subtitle:
-                'When it\'s your turn, you have priority - the right to act first. But once you act, your opponent gets a chance to respond. Great players use this rhythm to gather information before committing resources.\n\nWait to see what your opponent reveals. If they leave runes open, assume they\'re holding reactive cards.\n\nForce information. Sometimes a small, safe action early in a turn can bait responses and tell you what they\'re holding.\n\nReact last, win more. Holding your spells until your opponent commits means you\'ll know exactly what needs answering.\n\nTiming isn\'t just patience - it\'s control through observation.',
+                'Act only when you must. Priority/Focus define who may act; Open/Closed states and Showdowns define what may be played.\n\n Waiting until the last legal window gives you maximum board and resource info before you commit.\n\nOpen vs. Closed. If no Chain exists, the state is Open; once a card/ability goes on the Chain, it\'s Closed—only Reaction effects can be added. Posturing in your sequencing is a tactic used to gain information revealing their plan, where you are meticulus in your actions to bait out interaction to narrow down the possible reads of what your opponent might have in their hand. This idea goes even further with bluffing interaction you might or might not have to set up traps / buy you time.\n\nLet them commit; you react. Spells resolve top-down on the Chain; if you wait and respond after targets are chosen, you can minimize their effects with your own reactions (move a unit, remove a target, modifying stats, etc.).\n\nNon-reactable game actions like movement/drawing a card/ending the turn doesn\'t trigger a showdown and can\'t be Reacted to. Giving us the opportunity to strategically deny their timing windows and buy you time.\n\nThe overall goal is to use your timing to gain information and control the flow of the game, making it as difficult as possible for your opponent to execute their gameplan and interaction.',
             },
             {
-              title: 'Point 2: Extracting Maximum Value',
+              title: 'Point 2: Sequencing to Bait Reactions (Value, Bluffing, & Reads)',
               subtitle:
-                'Every rune you spend should create as much advantage as possible. Acting too early wastes potential; acting too late loses momentum.\n\nRespond efficiently. Use cheap, flexible cards to punish your opponent\'s big plays without losing tempo.\n\nStack your effects. Chain abilities together at the right time to multiply their impact - reacting after a trigger can often flip the entire exchange.\n\nLet the situation develop. If your opponent overextends, you gain more targets and more value from the same card.\n\nThink of your timing as leverage - the more patient you are, the greater the return.',
+                'Bait with low stakes, punish with high stakes. Lead with a smaller play to force information—make them spend a Reaction or keep runes up—then commit the real threat after you\'ve read their timing.\n\nExploit the Chain. Once a Chain starts, only Reactions can join it. If you can open a Chain they must answer (or lose a target), you tax their runes and narrow their options for the rest of the turn.\n\nCreate mistargets. Opponents choose targets while playing; if those targets become illegal by resolution (move zone, change state), that instruction is ignored—your card still "played," their card did nothing. Sequence with this in mind.\n\nBluff with runes. Leaving specific runes available threatens Action/Reaction lines. Good opponents watch unspent runes; you should too—long pauses, conserved resources, and repeated passes often telegraph interaction. (Hidden/face-down tools amplify this posture.)\n\n',
             },
             {
-              title: 'Point 3: Bluffing and Reading Reactions',
+              title: 'Point 3: Showdowns—Who Goes First, Who Gets the Last Say',
               subtitle:
-                'Experienced players play the person, not just the board. The runes left unspent are often louder than any card played.\n\nBluff with intent. Leaving two runes open can make your opponent hesitate to attack or commit - even if you have nothing.\n\nRead their confidence. Quick plays signal comfort; long pauses often mean indecision or setup.\n\nPunish open runes. If your opponent keeps mana untapped but never uses it, push tempo and make them pay for their hesitation.\n\nHide your true plan. Sometimes pretending to have an answer is enough to buy you a full turn of safety.\n\nTiming gives you access to the psychological battlefield.',
+                'When Showdowns happen. A Showdown opens when combat begins or when a player contests an uncontrolled battlefield after a move; the mover/attacker gains Focus first.\n\nFocus ≠ forever. In Showdowns, the player with Focus has Priority to play Action/Reaction options; after each Chain resolves, Focus passes in turn order. Passing in sequence ends the Showdown—plan to engineer the last meaningful action.\n\nInitial triggers & stat mods. At combat Showdowns, "When I attack/defend" triggers stack first; Assault/Shield apply before damage assignment. Understanding this lets you time pumps, stuns, and recalls for maximum swing.\n\nFinal-window discipline. Because Showdowns are Open (until a Chain starts), you can wait, let them expose a buff/counter, then answer with your Reaction—aim to be the last to act before damage or before Conquer/Hold outcomes are locked.\n\n',
             },
             {
               title: 'Conclusion',
               subtitle:
-                'Great Riftbound players don\'t just react - they dictate reactions.\n\nBy mastering timing, you turn every action into a choice that pressures your opponent to move on your terms.\n\nLearn to wait, read, and strike when it matters most.\n\nThat\'s how you gain value, gather information, and win - not just on the board, but in the mind game behind it.',
+                'Every desion you make in not only what to play but when you play it is a decision to either gain information or control the flow of the game. Use Open/Closed state knowledge, Chain rules, and Showdown Focus to bait responses, create mistargets, and claim outsized value from every rune.\n\n The most disciplined player can consistently leverage timing to gain information and control the flow of the game, making it as difficult as possible for their opponent to execute their gameplan and interaction.',
             },
           ]}
         />
