@@ -34,7 +34,7 @@ const Customization = (): JSX.Element => {
             <br />
             &
             <br />
-            Pokemon Pocket Coaching
+            Riftbound Coaching
             <br />
             &
             <br />
@@ -49,7 +49,7 @@ const Customization = (): JSX.Element => {
         >
           <br />
           My name is Philips and I am a competitive card game player based in
-          the US. (MTG | Lorcana | Pokemon Pocket)
+          the US. (MTG | Lorcana | Riftbound)
           <br />
           <br />
           Throughout my gaming career I have went through <b>NUMEROUS</b>{' '}

@@ -49,12 +49,13 @@ const NavItem = ({
         display={'flex'}
         alignItems={'center'}
         aria-describedby={id}
-        sx={{ cursor: 'pointer' }}
+        sx={{ cursor: 'pointer', whiteSpace: 'nowrap' }}
         onClick={(e) => handleClick(e, id)}
       >
         <Typography
-          fontWeight={openedPopoverId === id || hasActiveLink() ? 700 : 400}
+          fontWeight={400}
           color={linkColor}
+          sx={{ whiteSpace: 'nowrap' }}
         >
           {title}
         </Typography>

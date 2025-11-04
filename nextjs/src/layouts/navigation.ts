@@ -42,6 +42,10 @@ const pages = {
       title: 'Exclusive Pokemon Pocket Guide',
       href: '/pokemon-pocket',
     }, 
+    {
+      title: 'Exclusive Riftbound Guide',
+      href: '/riftbound',
+    }, 
   ],
   aboutme: [
     {

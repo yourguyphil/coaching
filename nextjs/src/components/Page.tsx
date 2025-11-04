@@ -1,40 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import CssBaseline from '@mui/material/CssBaseline';
 import getTheme from 'theme';
 import AOS from 'aos';
 
-export const useDarkMode = (): [string, () => void, boolean] => {
-  const [themeMode, setTheme] = useState('light');
-  const [mountedComponent, setMountedComponent] = useState(false);
-
-  const setMode = (mode: string) => {
-    try {
-      window.localStorage.setItem('themeMode', mode);
-    } catch {
-      /* do nothing */
-    }
-
-    setTheme(mode);
-  };
-
-  const themeToggler = (): void => {
-    themeMode === 'dark' ? setMode('dark') : setMode('dark');
-  };
-
-  useEffect(() => {
-    try {
-      const localTheme = window.localStorage.getItem('themeMode');
-      localTheme ? setTheme(localTheme) : setMode('light');
-    } catch {
-      setMode('light');
-    }
-
-    setMountedComponent(true);
-  }, []);
-
-  return [themeMode, themeToggler, mountedComponent];
+// Force dark mode - no toggle functionality
+const themeToggler = (): void => {
+  // No-op: dark mode is forced
 };
 
 interface Props {
@@ -42,11 +15,11 @@ interface Props {
 }
 
 export default function Page({ children }: Props): JSX.Element {
-  React.useEffect(() => {
+  useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
     if (jssStyles) {
-      jssStyles.parentElement.removeChild(jssStyles);
+      jssStyles.parentElement?.removeChild(jssStyles);
     }
 
     AOS.init({
@@ -55,13 +28,13 @@ export default function Page({ children }: Props): JSX.Element {
       duration: 500,
       easing: 'ease-in-out',
     });
+
+    // Refresh AOS after initialization
+    AOS.refresh();
   }, []);
 
-  const [themeMode, themeToggler, mountedComponent] = useDarkMode();
-
-  useEffect(() => {
-    AOS.refresh();
-  }, [mountedComponent, themeMode]);
+  // Always use 'dark' mode - no state needed to prevent hydration issues
+  const themeMode = 'dark';
 
   return (
     <ThemeProvider theme={getTheme(themeMode, themeToggler)}>

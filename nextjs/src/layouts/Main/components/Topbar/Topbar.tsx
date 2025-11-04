@@ -57,8 +57,15 @@ const Topbar = ({
           paddingRight={2}
         />
       </Box>
-      <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
-        <Box marginLeft={4}>
+      <Box 
+        sx={{ 
+          display: { xs: 'none', md: 'flex' },
+          flexDirection: 'row',
+          flexWrap: 'nowrap',
+          alignItems: 'center'
+        }}
+      >
+        <Box marginLeft={4} sx={{ whiteSpace: 'nowrap' }}>
           <NavItem
             title={'Free Gaming Resources'}
             id={'portfolio-pages'}
@@ -66,7 +73,7 @@ const Topbar = ({
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
+        <Box marginLeft={4} sx={{ whiteSpace: 'nowrap' }}>
           <NavItem
             title={'Free Stratergy Guides'}
             id={'freecoaching-pages'}
@@ -74,7 +81,7 @@ const Topbar = ({
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
+        <Box marginLeft={4} sx={{ whiteSpace: 'nowrap' }}>
           <NavItem
             title={'About Me'}
             id={'aboutme-pages'}
@@ -82,16 +89,28 @@ const Topbar = ({
             colorInvert={colorInvert}
           />
         </Box>
-        <Box marginLeft={4}>
+        <Box marginLeft={4} display="flex" sx={{ flexShrink: 0 }}>
           <Button
             variant="contained"
             color="primary"
             component="a"
-            target="blank"
+            target="_blank"
             href="https://www.fiverr.com/philipsnguyen/build-or-tune-a-deck-of-your-choice-mtg-or-gods-unchained?context_referrer=gig_page&source=other_gigs_by&ref_ctx_id=fb59be5574254dd0abb5f52ef0da6edc&pckg_id=1&pos=3&seller_online=true&imp_id=e2f8c0af-42e9-4f8f-ba95-889e516c616b"
             size="large"
+            sx={{ whiteSpace: 'nowrap' }}
           >
             Start Now
+          </Button>
+          <Button
+            variant="contained"
+            color="success"
+            component="a"
+            target="_blank"
+            href="https://ko-fi.com/yourguyphil"
+            size="large"
+            sx={{ ml: 2, whiteSpace: 'nowrap', color: 'common.white' }}
+          >
+            Support Me
           </Button>
         </Box>
       </Box>
