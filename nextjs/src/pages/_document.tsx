@@ -21,8 +21,8 @@ export default class MyDocument extends Document {
           />
           <meta name="theme-color" content="#ffffff" />
           <title>
-            Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Magic
-            the Gathering | Gods Unchained
+            Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Gods Unchained (GU) | Magic
+            the Gathering (MTG)
           </title>
           <meta
             name="title"
