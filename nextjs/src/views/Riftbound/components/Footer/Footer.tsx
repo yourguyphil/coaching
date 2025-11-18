@@ -1,10 +1,23 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+import React, { useEffect } from 'react';
+import Script from 'next/script';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+
+// TypeScript declarations for Plausible
+declare global {
+  interface Window {
+    plausible?: {
+      (args: any): void;
+      q?: any[];
+      init?: (i?: any) => void;
+      o?: any;
+    };
+  }
+}
 
 const Footer = (): JSX.Element => {
   const theme = useTheme();
@@ -12,8 +25,27 @@ const Footer = (): JSX.Element => {
     defaultMatches: true,
   });
 
+  useEffect(() => {
+    // Initialize Plausible
+    if (typeof window !== 'undefined') {
+      window.plausible = window.plausible || function() {
+        (window.plausible.q = window.plausible.q || []).push(arguments);
+      };
+      window.plausible.init = window.plausible.init || function(i: any) {
+        window.plausible.o = i || {};
+      };
+      window.plausible.init();
+    }
+  }, []);
+
   return (
     <Box>
+      {/* Privacy-friendly analytics by Plausible */}
+      <Script
+        async
+        src="https://plausible.io/js/pa-7rHGiNNXJF-96qkNMo-HU.js"
+        strategy="afterInteractive"
+      />
       <Box marginBottom={4}>
         <Typography
           variant="h4"
