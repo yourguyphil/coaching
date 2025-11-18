@@ -15,6 +15,19 @@ export default class MyDocument extends Document {
             data-domain="coaching.philipsnguyen.com"
             src="https://plausible.philipsnguyen.com/js/script.js"
           ></script>
+          {/* Privacy-friendly analytics by Plausible */}
+          <script
+            async
+            src="https://plausible.io/js/pa-7rHGiNNXJF-96qkNMo-HU.js"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+                plausible.init()
+              `,
+            }}
+          />
           <link
             rel="shortcut icon"
             href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
