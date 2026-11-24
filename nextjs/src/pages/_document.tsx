@@ -10,15 +10,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script
-            defer
-            data-domain="coaching.philipsnguyen.com"
-            src="https://plausible.philipsnguyen.com/js/script.js"
-          ></script>
           {/* Privacy-friendly analytics by Plausible */}
           <script
             async
-            src="https://plausible.io/js/pa-7rHGiNNXJF-96qkNMo-HU.js"
+            src="https://plausible.philipsnguyen.com/js/pa--Ep58cecsZxHqBWASCcXV.js"
           ></script>
           <script
             dangerouslySetInnerHTML={{
