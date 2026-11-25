@@ -3,6 +3,7 @@ import React from 'react';
 import Head from 'next/head';
 
 import Page from '../components/Page';
+import Seo from '../components/Seo';
 
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import 'slick-carousel/slick/slick.css';
@@ -15,13 +16,16 @@ export default function App({ Component, pageProps }): JSX.Element {
   return (
     <React.Fragment>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
+        />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Philips Nguyen | Master Class</title>
       </Head>
+      <Seo />
       <Page>
         <Component {...pageProps} />
       </Page>

@@ -28,69 +28,7 @@ export default class MyDocument extends Document {
             href="https://philipsweb.blob.core.windows.net/$web/placeholder.ico"
           />
           <meta name="theme-color" content="#ffffff" />
-          <title>
-            Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Gods Unchained (GU) | Magic
-            the Gathering (MTG)
-          </title>
-          <meta
-            name="title"
-            content="Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Gods Unchained (GU) | Magic
-            the Gathering (MTG)"
-          ></meta>
-          <meta
-            name="description"
-            content="Want to maximize your strategic advantage playing card games?
-
-Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
-
-I offer premier Riftbound Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
-          ></meta>
-
-          <meta property="og:type" content="website"></meta>
-          <meta
-            property="og:url"
-            content="https://coaching.philipsnguyen.com/"
-          ></meta>
-          <meta
-            property="og:title"
-            content="Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Gods Unchained (GU) | Magic
-            the Gathering (MTG)"
-          ></meta>
-          <meta
-            property="og:description"
-            content="Want to maximize your strategic advantage playing card games?
-
-            Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
-            
-            I offer premier Riftbound Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
-          ></meta>
-          <meta
-            property="og:image"
-            content="https://philipsweb.blob.core.windows.net/$web/metatagimage.jpg"
-          ></meta>
-
-          <meta property="twitter:card" content="summary_large_image"></meta>
-          <meta
-            property="twitter:url"
-            content="https://coaching.philipsnguyen.com/"
-          ></meta>
-          <meta
-            property="twitter:title"
-            content="Philips Nguyen | Master Class TCG Coaching | Riftbound | Lorcana | Gods Unchained (GU) | Magic
-            the Gathering (MTG)"
-          ></meta>
-          <meta
-            property="twitter:description"
-            content="Want to maximize your strategic advantage playing card games?
-
-            Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!
-            
-            I offer premier Riftbound Coaching, Lorcana Coaching, Gods Unchained Coaching and Magic the Gathering Coaching!"
-          ></meta>
-          <meta
-            property="twitter:image"
-            content="https://philipsweb.blob.core.windows.net/$web/metatagimage.jpg"
-          ></meta>
+          <meta name="author" content="Philips Nguyen" />
         </Head>
         <body>
           <Main />

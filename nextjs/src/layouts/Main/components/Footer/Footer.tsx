@@ -72,7 +72,7 @@ const Footer = (): JSX.Element => {
           color="text.secondary"
           gutterBottom
         >
-          &copy; Philips Nguyen 2022
+          &copy; Philips Nguyen 2025
         </Typography>
       </Grid>
     </Grid>

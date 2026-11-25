@@ -71,6 +71,7 @@ const Hero = (): JSX.Element => {
         <Box>
           <Typography
             variant="h3"
+            component="h1"
             sx={{
               fontWeight: 400,
               color: 'common.white',
@@ -94,6 +95,7 @@ const Hero = (): JSX.Element => {
         >
           <Typography
             variant="body1"
+            component="h2"
             sx={{
               fontWeight: 400,
               color: 'common.white',
@@ -104,8 +106,8 @@ const Hero = (): JSX.Element => {
               Curated to elevate your game in the world of Trading Card Games.
               <br />
               <br />
-              Designed to span ALL tcgs. MTG Stratergy Guides, Gods Unchained
-              Strategy Guides, and more!
+              Designed to span ALL TCGs — MTG strategy guides, Gods Unchained
+              strategy guides, Lorcana, Riftbound, and more!
             </i>
           </Typography>
         </Box>

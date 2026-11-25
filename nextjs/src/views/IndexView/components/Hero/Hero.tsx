@@ -7,8 +7,6 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
-import Head from 'next/head';
-
 const Hero = (): JSX.Element => {
   const theme = useTheme();
 
@@ -41,12 +39,6 @@ const Hero = (): JSX.Element => {
             </Typography>
           </Box>
           <Box marginBottom={3}>
-            <Head>
-              <meta
-                property="og:title"
-                content="Improve your skills, Elevate your game, Broaden your tactics, Boost your strategic edge, Become a stronger player!"
-              />
-            </Head>
             <Typography variant="h6" component="p" color="text.secondary">
               Master Class Coaching and Gameplay Review.
               <br />

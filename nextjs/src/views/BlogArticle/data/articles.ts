@@ -5,9 +5,13 @@ export interface Article {
   date_created: string;
   date_updated: string | null;
   title: string;
+  slug: string;
   main_image: string;
   article: string;
   description: string;
+  seoTitle: string;
+  seoDescription: string;
+  keywords: string;
 }
 
 export interface Articles {
@@ -16,72 +20,132 @@ export interface Articles {
 
 /** Static strategy guides formerly served from Directus (cms.philipsnguyen.com). */
 export const articlesData: Articles = {
-  "data": [
+  data: [
     {
-      "id": 1,
-      "status": "published",
-      "sort": 1,
-      "date_created": "2023-03-03T22:57:34.414Z",
-      "date_updated": "2023-03-04T06:25:04.094Z",
-      "title": "Next Level Metagaming",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/NextLevelMetaGaming.png",
-      "article": "<p><span style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">One of the keys to victory in any trading card game is to have a strategy that is flexible enough to adapt to your opponent's moves, yet focused enough to pursue your own objectives.</span><br /><br />At its core, metagaming involves analyzing the game's environment to predict and prepare for the strategies of other players. This can include studying popular decks and tactics, monitoring tournament results, and following the community's discussions and opinions. <br /><br />The idea of<strong> \"Next Level Metagaming\"</strong> goes beyond this basic level of analysis and involves taking a more proactive approach to gain an advantage over the field. <strong>Predicting the metagaming and preparation of our opponents.</strong></p>\n<p>One of the key ways that players can take metagaming to the next level is by collaborating with other players to share information and develop new strategies. Discords, online forums and social media groups provide a platform for players to connect and rapidly share their learnings from testing, which can be invaluable for gaining a deeper understanding of the current format. This collaborative approach can also help players to identify weaknesses in popular decks and find ways to exploit them. In this, <strong>Next Level Metagaming&nbsp;</strong>will aim to counter the preparation of the discussed topics.</p>\n<p>Another way that players can take metagaming to the next level is by actively participating in the game's community and shaping its direction. This could involve organizing tournaments, creating content, or even developing new cards or rule changes. By taking an active role in the community, players can not only improve their own skills but also contribute to the growth and development of the game itself.</p>\n<p>Finally, taking metagaming to the next level requires a willingness to experiment and take risks. This can involve testing new decks or strategies that may not be popular or well-known, but have the potential to disrupt the meta and give players an edge. It also requires a willingness to adapt and change strategies as the meta shifts and evolves, which is a critical skill for any serious trading card game player.</p>\n<p>In conclusion, metagaming is an essential aspect of trading card games, and taking it to the next level can be a game-changer for players. By collaborating with other players, actively participating in the community, and being willing to experiment and take risks, players can gain a deeper understanding of the game and develop new strategies that can give them a competitive edge. As trading card games continue to evolve, the importance of metagaming will only increase, and those who are willing to take it to the next level will undoubtedly have a significant advantage.<br /><br />TLDR; Anticipate the preparation of our opponents! Beat the counter (While having a solid plan for the top deck)</p>",
-      "description": "Gaining a competitive edge by making calculated meta calls"
+      id: 1,
+      status: 'published',
+      sort: 1,
+      date_created: '2023-03-03T22:57:34.414Z',
+      date_updated: '2023-03-04T06:25:04.094Z',
+      title: 'Next Level Metagaming',
+      slug: 'next-level-metagaming',
+      main_image:
+        'https://philipsweb.blob.core.windows.net/$web/NextLevelMetaGaming.png',
+      article:
+        "<p><span style=\"font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\">One of the keys to victory in any trading card game is to have a strategy that is flexible enough to adapt to your opponent's moves, yet focused enough to pursue your own objectives.</span><br /><br />At its core, metagaming involves analyzing the game's environment to predict and prepare for the strategies of other players. This can include studying popular decks and tactics, monitoring tournament results, and following the community's discussions and opinions. <br /><br />The idea of<strong> \"Next Level Metagaming\"</strong> goes beyond this basic level of analysis and involves taking a more proactive approach to gain an advantage over the field. <strong>Predicting the metagaming and preparation of our opponents.</strong></p>\n<p>One of the key ways that players can take metagaming to the next level is by collaborating with other players to share information and develop new strategies. Discords, online forums and social media groups provide a platform for players to connect and rapidly share their learnings from testing, which can be invaluable for gaining a deeper understanding of the current format. This collaborative approach can also help players to identify weaknesses in popular decks and find ways to exploit them. In this, <strong>Next Level Metagaming&nbsp;</strong>will aim to counter the preparation of the discussed topics.</p>\n<p>Another way that players can take metagaming to the next level is by actively participating in the game's community and shaping its direction. This could involve organizing tournaments, creating content, or even developing new cards or rule changes. By taking an active role in the community, players can not only improve their own skills but also contribute to the growth and development of the game itself.</p>\n<p>Finally, taking metagaming to the next level requires a willingness to experiment and take risks. This can involve testing new decks or strategies that may not be popular or well-known, but have the potential to disrupt the meta and give players an edge. It also requires a willingness to adapt and change strategies as the meta shifts and evolves, which is a critical skill for any serious trading card game player.</p>\n<p>In conclusion, metagaming is an essential aspect of trading card games, and taking it to the next level can be a game-changer for players. By collaborating with other players, actively participating in the community, and being willing to experiment and take risks, players can gain a deeper understanding of the game and develop new strategies that can give them a competitive edge. As trading card games continue to evolve, the importance of metagaming will only increase, and those who are willing to take it to the next level will undoubtedly have a significant advantage.<br /><br />TLDR; Anticipate the preparation of our opponents! Beat the counter (While having a solid plan for the top deck)</p>",
+      description: 'Gaining a competitive edge by making calculated meta calls',
+      seoTitle: 'Next Level Metagaming Strategy Guide for TCGs',
+      seoDescription:
+        'Learn next-level TCG metagaming: predict opponent preparation, collaborate on tech, and make calculated meta calls that win tournaments across MTG, Lorcana, GU, and more.',
+      keywords:
+        'TCG metagaming, trading card game meta, tournament meta calls, MTG metagame, Lorcana meta, Gods Unchained meta, competitive TCG strategy',
     },
     {
-      "id": 2,
-      "status": "published",
-      "sort": 2,
-      "date_created": "2023-03-04T02:35:43.561Z",
-      "date_updated": "2023-03-04T06:25:51.480Z",
-      "title": "Choosing The Best Weapon For Battle",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/blacksmith.png",
-      "article": "<p>In any trading card game, choosing the best weapons for battle can make or break your chances of winning. This includes crafting the best deck list based on the type of tournament you're entering. Whether you're competing in a local event or a larger one, understanding how to build the optimal deck is crucial for success.<br /><br />For local events, it's essential to be more greedy with your deck building strategy. Since there are fewer rounds and a smaller player pool, it's easier to predict the meta and take advantage of it. This means you can afford to be more aggressive with your card choices, selecting more specialized cards that are less versatile but have a higher impact in specific matchups. Don't be afraid to take risks and experiment with new strategies in this type of tournament. <br /><br />However, for larger events, it's best to be as safe as possible with your deck building. With more rounds and a larger player pool, it's much harder to predict the meta and what decks you'll be facing. This means you'll want to focus on more versatile cards that can be effective in a variety of matchups. Additionally, it's important to include cards that can deal with the most popular and powerful decks in the format to give yourself the best chance of success. <br /><br />One way to achieve this is by researching the most successful deck archetypes and including cards that can counter them. You can also look at the top-performing players and the decks they used to get a better understanding of the meta. Keep in mind that larger events often have a wider range of decks, so being prepared for a variety of matchups is crucial. <br /><br />It's also important to consider the format of the tournament when building your deck. Some tournaments may have restrictions on which cards or decks are allowed, so make sure to familiarize yourself with the rules before building your deck. This can also affect which cards are the most valuable and effective in the format. <br /><br />In conclusion, when it comes to choosing the best weapons for battle in trading card games, it's crucial to consider the type of tournament you're entering. For local events, you can afford to be more greedy with your card choices, while for larger events, it's best to be as safe as possible. Understanding the meta, researching successful deck archetypes, and including versatile cards that can deal with a variety of matchups are all essential components of crafting the best deck list. Finally, it's important to keep in mind any restrictions or rules of the tournament that may affect your deck building strategy.</p>",
-      "description": "Considerations while deckbuilding for a specific event"
+      id: 2,
+      status: 'published',
+      sort: 2,
+      date_created: '2023-03-04T02:35:43.561Z',
+      date_updated: '2023-03-04T06:25:51.480Z',
+      title: 'Choosing The Best Weapon For Battle',
+      slug: 'choosing-the-best-weapon-for-battle',
+      main_image: 'https://philipsweb.blob.core.windows.net/$web/blacksmith.png',
+      article:
+        "<p>In any trading card game, choosing the best weapons for battle can make or break your chances of winning. This includes crafting the best deck list based on the type of tournament you're entering. Whether you're competing in a local event or a larger one, understanding how to build the optimal deck is crucial for success.<br /><br />For local events, it's essential to be more greedy with your deck building strategy. Since there are fewer rounds and a smaller player pool, it's easier to predict the meta and take advantage of it. This means you can afford to be more aggressive with your card choices, selecting more specialized cards that are less versatile but have a higher impact in specific matchups. Don't be afraid to take risks and experiment with new strategies in this type of tournament. <br /><br />However, for larger events, it's best to be as safe as possible with your deck building. With more rounds and a larger player pool, it's much harder to predict the meta and what decks you'll be facing. This means you'll want to focus on more versatile cards that can be effective in a variety of matchups. Additionally, it's important to include cards that can deal with the most popular and powerful decks in the format to give yourself the best chance of success. <br /><br />One way to achieve this is by researching the most successful deck archetypes and including cards that can counter them. You can also look at the top-performing players and the decks they used to get a better understanding of the meta. Keep in mind that larger events often have a wider range of decks, so being prepared for a variety of matchups is crucial. <br /><br />It's also important to consider the format of the tournament when building your deck. Some tournaments may have restrictions on which cards or decks are allowed, so make sure to familiarize yourself with the rules before building your deck. This can also affect which cards are the most valuable and effective in the format. <br /><br />In conclusion, when it comes to choosing the best weapons for battle in trading card games, it's crucial to consider the type of tournament you're entering. For local events, you can afford to be more greedy with your card choices, while for larger events, it's best to be as safe as possible. Understanding the meta, researching successful deck archetypes, and including versatile cards that can deal with a variety of matchups are all essential components of crafting the best deck list. Finally, it's important to keep in mind any restrictions or rules of the tournament that may affect your deck building strategy.</p>",
+      description: 'Considerations while deckbuilding for a specific event',
+      seoTitle: 'TCG Deckbuilding Guide: Choose the Best Weapon for Battle',
+      seoDescription:
+        'Deckbuilding tips for local vs large TCG tournaments. Learn when to greedy tech and when to play safe for MTG, Lorcana, Gods Unchained, and more.',
+      keywords:
+        'TCG deckbuilding, tournament deck list, local vs open event deckbuilding, trading card game strategy, MTG deck building, Lorcana deckbuilding',
     },
     {
-      "id": 3,
-      "status": "published",
-      "sort": 3,
-      "date_created": "2023-03-04T02:38:59.588Z",
-      "date_updated": "2023-03-04T06:25:59.416Z",
-      "title": "Getting The Most Out Of Practice",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/practice.png",
-      "article": "<p>In any trading card game, practice is essential to achieving success in tournaments. However, not all practice is created equal. To get the most out of your practice sessions, it's important to focus on finding a strong play group, maximizing the amount of games you play, and optimizing your play testing. <br /><br />First and foremost, finding a strong play group is crucial to improving your skills. Playing against opponents who are better than you will push you to improve faster than playing against weaker opponents. Look for players who have a good understanding of the game and are willing to provide constructive feedback. Don't be afraid to travel to other game stores or events to find players who can challenge you. <br /><br />Maximizing the amount of games you play is also essential for improving your skills. Make sure you have enough time to play multiple games during your practice sessions. This will give you the opportunity to test out different strategies and improve your decision-making skills. Additionally, make sure to switch up your opponents so you can practice against different play styles and decks. <br /><br />When testing new cards, it's important to add them to your opening hand to expedite the play testing process. This will give you a better understanding of how the card interacts with your deck and help you identify any potential weaknesses. Make sure to also consider the impact of the new card on your overall deck strategy and how it fits into the current meta. <br /><br />Another way to get the most out of your practice sessions is to record your games and review them later. This will give you the opportunity to analyze your decisions and identify areas where you can improve. Look for moments where you missed an opportunity to make a play or made a suboptimal decision. This will help you improve your overall gameplay and decision-making skills. <br /><br />In conclusion, getting the most out of practice in trading card games requires finding a strong play group, maximizing the amount of games you play, and optimizing your play testing. Seek out opponents who are better than you, play multiple games during each session, and test new cards by adding them to your opening hand. Additionally, consider recording your games and reviewing them later to identify areas where you can improve. With these strategies, you'll be well on your way to improving your skills and achieving success in tournaments.</p>",
-      "description": "Utilize the days before battle effectively"
+      id: 3,
+      status: 'published',
+      sort: 3,
+      date_created: '2023-03-04T02:38:59.588Z',
+      date_updated: '2023-03-04T06:25:59.416Z',
+      title: 'Getting The Most Out Of Practice',
+      slug: 'getting-the-most-out-of-practice',
+      main_image: 'https://philipsweb.blob.core.windows.net/$web/practice.png',
+      article:
+        "<p>In any trading card game, practice is essential to achieving success in tournaments. However, not all practice is created equal. To get the most out of your practice sessions, it's important to focus on finding a strong play group, maximizing the amount of games you play, and optimizing your play testing. <br /><br />First and foremost, finding a strong play group is crucial to improving your skills. Playing against opponents who are better than you will push you to improve faster than playing against weaker opponents. Look for players who have a good understanding of the game and are willing to provide constructive feedback. Don't be afraid to travel to other game stores or events to find players who can challenge you. <br /><br />Maximizing the amount of games you play is also essential for improving your skills. Make sure you have enough time to play multiple games during your practice sessions. This will give you the opportunity to test out different strategies and improve your decision-making skills. Additionally, make sure to switch up your opponents so you can practice against different play styles and decks. <br /><br />When testing new cards, it's important to add them to your opening hand to expedite the play testing process. This will give you a better understanding of how the card interacts with your deck and help you identify any potential weaknesses. Make sure to also consider the impact of the new card on your overall deck strategy and how it fits into the current meta. <br /><br />Another way to get the most out of your practice sessions is to record your games and review them later. This will give you the opportunity to analyze your decisions and identify areas where you can improve. Look for moments where you missed an opportunity to make a play or made a suboptimal decision. This will help you improve your overall gameplay and decision-making skills. <br /><br />In conclusion, getting the most out of practice in trading card games requires finding a strong play group, maximizing the amount of games you play, and optimizing your play testing. Seek out opponents who are better than you, play multiple games during each session, and test new cards by adding them to your opening hand. Additionally, consider recording your games and reviewing them later to identify areas where you can improve. With these strategies, you'll be well on your way to improving your skills and achieving success in tournaments.</p>",
+      description: 'Utilize the days before battle effectively',
+      seoTitle: 'How to Practice Trading Card Games Effectively',
+      seoDescription:
+        'Get more from TCG practice: find a strong playgroup, maximize reps, accelerate playtesting, and review games to improve faster before your next tournament.',
+      keywords:
+        'TCG practice, playtesting trading card games, tournament preparation, improve at TCGs, Magic practice, Lorcana practice, coaching tips',
     },
     {
-      "id": 4,
-      "status": "published",
-      "sort": null,
-      "date_created": "2023-03-04T17:06:55.163Z",
-      "date_updated": null,
-      "title": "Reflecting On Your Results ",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/Reflect.png",
-      "article": "<p>Reflecting on your Results: Creating a Strong Action Plan for Trading Card Game Success</p>\n<p>In the competitive world of trading card games, it's important to take a step back and reflect on your recent tournament results. Evaluating your performance is crucial to creating a strong action plan for improvement. Whether you're a seasoned veteran or just starting out, reflecting on your results can help you identify areas of weakness and develop a plan to push yourself out of your comfort zone and challenge yourself.</p>\n<p>The first step in reflecting on your results is to review your tournament performance. Take a look at your win-loss record, the decks you used, and the strategies you employed. Look for patterns in your play and identify areas where you struggled. Be honest with yourself and don't be afraid to admit your weaknesses. Remember, identifying areas for improvement is the first step in getting better.</p>\n<p>Once you've identified areas for improvement, it's time to develop a plan of action. Start by setting specific, achievable goals for yourself. For example, if you struggled with a particular type of deck, set a goal to become more familiar with that deck and develop strategies to counter it. If you struggled with managing your resources, set a goal to practice more resource management in your games.</p>\n<p>Another key component of reflecting on your results is continuous learning. The trading card game landscape is constantly evolving, with new cards and strategies being introduced all the time. It's important to stay up-to-date on these changes and adapt your play accordingly. One way to do this is by regularly reading online forums and watching videos of top players in the game.</p>\n<p>Finally, don't be afraid to push yourself out of your comfort zone and challenge yourself. It's easy to fall into a routine and rely on the same strategies and decks, but this can lead to stagnation and prevent you from improving. Try experimenting with new decks and strategies, even if they're outside your comfort zone. You may be surprised at what you can learn and how it can improve your overall game.</p>\n<p>In conclusion, reflecting on your results is an essential part of improving your trading card game skills. Take the time to review your tournament performance, identify areas for improvement, and develop a plan of action. Remember to continuously learn and adapt to changes in the game, and don't be afraid to challenge yourself and push beyond your comfort zone. With these strategies in place, you'll be well on your way to trading card game success.</p>",
-      "description": "Evaluating your past to expedite your growth"
+      id: 4,
+      status: 'published',
+      sort: null,
+      date_created: '2023-03-04T17:06:55.163Z',
+      date_updated: null,
+      title: 'Reflecting On Your Results',
+      slug: 'reflecting-on-your-results',
+      main_image: 'https://philipsweb.blob.core.windows.net/$web/Reflect.png',
+      article:
+        "<p>Reflecting on your Results: Creating a Strong Action Plan for Trading Card Game Success</p>\n<p>In the competitive world of trading card games, it's important to take a step back and reflect on your recent tournament results. Evaluating your performance is crucial to creating a strong action plan for improvement. Whether you're a seasoned veteran or just starting out, reflecting on your results can help you identify areas of weakness and develop a plan to push yourself out of your comfort zone and challenge yourself.</p>\n<p>The first step in reflecting on your results is to review your tournament performance. Take a look at your win-loss record, the decks you used, and the strategies you employed. Look for patterns in your play and identify areas where you struggled. Be honest with yourself and don't be afraid to admit your weaknesses. Remember, identifying areas for improvement is the first step in getting better.</p>\n<p>Once you've identified areas for improvement, it's time to develop a plan of action. Start by setting specific, achievable goals for yourself. For example, if you struggled with a particular type of deck, set a goal to become more familiar with that deck and develop strategies to counter it. If you struggled with managing your resources, set a goal to practice more resource management in your games.</p>\n<p>Another key component of reflecting on your results is continuous learning. The trading card game landscape is constantly evolving, with new cards and strategies being introduced all the time. It's important to stay up-to-date on these changes and adapt your play accordingly. One way to do this is by regularly reading online forums and watching videos of top players in the game.</p>\n<p>Finally, don't be afraid to push yourself out of your comfort zone and challenge yourself. It's easy to fall into a routine and rely on the same strategies and decks, but this can lead to stagnation and prevent you from improving. Try experimenting with new decks and strategies, even if they're outside your comfort zone. You may be surprised at what you can learn and how it can improve your overall game.</p>\n<p>In conclusion, reflecting on your results is an essential part of improving your trading card game skills. Take the time to review your tournament performance, identify areas for improvement, and develop a plan of action. Remember to continuously learn and adapt to changes in the game, and don't be afraid to challenge yourself and push beyond your comfort zone. With these strategies in place, you'll be well on your way to trading card game success.</p>",
+      description: 'Evaluating your past to expedite your growth',
+      seoTitle: 'Reflecting on Tournament Results: A TCG Improvement Plan',
+      seoDescription:
+        'Turn tournament results into growth. Learn how to review your TCG record, set goals, and build an action plan that accelerates improvement.',
+      keywords:
+        'TCG improvement, tournament results review, trading card game growth, competitive mindset, MTG improvement, post-tournament analysis',
     },
     {
-      "id": 5,
-      "status": "published",
-      "sort": null,
-      "date_created": "2023-03-04T17:11:17.391Z",
-      "date_updated": "2023-03-04T17:24:48.315Z",
-      "title": "Navigating A New Format ",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/Navigate.png",
-      "article": "<p>As with any trading card game, navigating a new format can be a daunting task. But with proper preparation and strategic planning, you can position yourself for success. In this article, we'll discuss a few key strategies to help you navigate a new format and stay ahead of the competition.</p>\n<p>One of the best ways to prepare for a new format is to analyze the theory crafting of others. Look for top players and content creators who are sharing their thoughts on the new format, and take note of the strategies they're proposing. This can give you a great starting point for your own deck building and help you identify potential strengths and weaknesses in the format.</p>\n<p>Another important strategy is to study past formats you have experience in that are similar to the new one. Look for similarities in card mechanics, deck archetypes, and meta trends. This can give you valuable insight into how the new format might play out, and help you identify potential deck building strategies that have worked in the past.</p>\n<p>As you begin playtesting your new deck, it's important to not get too attached to your ideas. Keep an open mind and be willing to make changes if things aren't working out. Playtesting is all about refining your deck and finding the best possible version, so don't be afraid to try new things and make adjustments as needed.</p>\n<p>One important thing to keep in mind when navigating a new format is that the meta can shift quickly as players experiment with new strategies. Stay up to date on the latest trends and adjust your deck accordingly. Don't be afraid to make changes mid-tournament if you notice a particular deck or strategy is becoming popular.</p>\n<p>Finally, remember that success in a new format is not just about having the best deck, but also about playing your best game. Focus on playing smart, making good decisions, and understanding the strengths and weaknesses of your opponents. By keeping these strategies in mind, you can position yourself for success in any new format that comes your way.</p>",
-      "description": "Positioning yourself to grow"
+      id: 5,
+      status: 'published',
+      sort: null,
+      date_created: '2023-03-04T17:11:17.391Z',
+      date_updated: '2023-03-04T17:24:48.315Z',
+      title: 'Navigating A New Format',
+      slug: 'navigating-a-new-format',
+      main_image: 'https://philipsweb.blob.core.windows.net/$web/Navigate.png',
+      article:
+        "<p>As with any trading card game, navigating a new format can be a daunting task. But with proper preparation and strategic planning, you can position yourself for success. In this article, we'll discuss a few key strategies to help you navigate a new format and stay ahead of the competition.</p>\n<p>One of the best ways to prepare for a new format is to analyze the theory crafting of others. Look for top players and content creators who are sharing their thoughts on the new format, and take note of the strategies they're proposing. This can give you a great starting point for your own deck building and help you identify potential strengths and weaknesses in the format.</p>\n<p>Another important strategy is to study past formats you have experience in that are similar to the new one. Look for similarities in card mechanics, deck archetypes, and meta trends. This can give you valuable insight into how the new format might play out, and help you identify potential deck building strategies that have worked in the past.</p>\n<p>As you begin playtesting your new deck, it's important to not get too attached to your ideas. Keep an open mind and be willing to make changes if things aren't working out. Playtesting is all about refining your deck and finding the best possible version, so don't be afraid to try new things and make adjustments as needed.</p>\n<p>One important thing to keep in mind when navigating a new format is that the meta can shift quickly as players experiment with new strategies. Stay up to date on the latest trends and adjust your deck accordingly. Don't be afraid to make changes mid-tournament if you notice a particular deck or strategy is becoming popular.</p>\n<p>Finally, remember that success in a new format is not just about having the best deck, but also about playing your best game. Focus on playing smart, making good decisions, and understanding the strengths and weaknesses of your opponents. By keeping these strategies in mind, you can position yourself for success in any new format that comes your way.</p>",
+      description: 'Positioning yourself to grow',
+      seoTitle: 'How to Navigate a New TCG Format Successfully',
+      seoDescription:
+        'New set drop? Learn how to navigate a fresh TCG format: study theory, borrow lessons from past metas, stay flexible in testing, and adapt as the meta shifts.',
+      keywords:
+        'new TCG format, set release strategy, format navigation, trading card game meta, theorycrafting, MTG new set, Lorcana new set',
     },
     {
-      "id": 6,
-      "status": "published",
-      "sort": null,
-      "date_created": "2023-03-04T17:19:51.711Z",
-      "date_updated": null,
-      "title": "Playing To Win",
-      "main_image": "https://philipsweb.blob.core.windows.net/$web/win.png",
-      "article": "<p>Trading card games can be both fun and challenging, especially when it comes to competing in tournaments. Winning a game is not just about having a strong deck, but it also requires strategic planning, quick thinking, and the ability to adapt to different situations. In this article, we will discuss how to convert more matches into wins by using time efficiently, playing to our outs, and scouting during tournaments.</p>\n<p>Knowing when to either try and win game 2 and/or game 3 or use your time to play more matches if grinding on a ladder can be crucial for your success in a tournament. If you are down in a game, it may be tempting to keep playing in the losing position in the hopes of \"getting lucky\", but it's important to weigh the odds of winning game 2 and winning game 3. Sometimes it may be better to concede the game and conserve your time for game 2 and game 3, especially if you feel that you have a better chance of winning it.&nbsp; On the other hand, if you are grinding on a ladder, it may be more efficient to play more matches to increase your chances of climbing the ranks. It is important to understand that time is a valuable resource when playing in tournaments, in the ranked ladder, and in preparation.&nbsp;</p>\n<p>Playing to our outs means thinking about how we can win in each situation. Sometimes it may seem like we are in a hopeless position, but if we can identify our outs, we can turn the game around. For example, if you are behind on cards and your opponent has a strong board presence, you may need to look for a combo or a specific card that can turn the tide in your favor. By thinking about our outs, we can make more calculated plays that increase our chances of winning.</p>\n<p>Scouting during tournaments and studying the metagame of the weekend can also give you an edge over your opponents. Scouting involves watching other matches to gather information about what decks are popular and what strategies are being used. This information can help you prepare for your next match by anticipating what cards your opponent may have and what their game plan might be. Studying the metagame involves analyzing data from previous tournaments to identify trends and determine what decks are strong against the current meta. By doing this, you can adjust your deck and playstyle to counter popular strategies and increase your chances of winning.</p>\n<p>In conclusion, winning a trading card game requires more than just having a strong deck. It involves efficient use of time, playing to our outs, and scouting during tournaments. By adopting these strategies, you can increase your chances of converting more matches into wins and achieving your goals in the game. Remember to stay focused, adapt to different situations, and have fun!</p>",
-      "description": "Converting more matches into victories"
-    }
-  ]
+      id: 6,
+      status: 'published',
+      sort: null,
+      date_created: '2023-03-04T17:19:51.711Z',
+      date_updated: null,
+      title: 'Playing To Win',
+      slug: 'playing-to-win',
+      main_image: 'https://philipsweb.blob.core.windows.net/$web/win.png',
+      article:
+        "<p>Trading card games can be both fun and challenging, especially when it comes to competing in tournaments. Winning a game is not just about having a strong deck, but it also requires strategic planning, quick thinking, and the ability to adapt to different situations. In this article, we will discuss how to convert more matches into wins by using time efficiently, playing to our outs, and scouting during tournaments.</p>\n<p>Knowing when to either try and win game 2 and/or game 3 or use your time to play more matches if grinding on a ladder can be crucial for your success in a tournament. If you are down in a game, it may be tempting to keep playing in the losing position in the hopes of \"getting lucky\", but it's important to weigh the odds of winning game 2 and winning game 3. Sometimes it may be better to concede the game and conserve your time for game 2 and game 3, especially if you feel that you have a better chance of winning it.&nbsp; On the other hand, if you are grinding on a ladder, it may be more efficient to play more matches to increase your chances of climbing the ranks. It is important to understand that time is a valuable resource when playing in tournaments, in the ranked ladder, and in preparation.&nbsp;</p>\n<p>Playing to our outs means thinking about how we can win in each situation. Sometimes it may seem like we are in a hopeless position, but if we can identify our outs, we can turn the game around. For example, if you are behind on cards and your opponent has a strong board presence, you may need to look for a combo or a specific card that can turn the tide in your favor. By thinking about our outs, we can make more calculated plays that increase our chances of winning.</p>\n<p>Scouting during tournaments and studying the metagame of the weekend can also give you an edge over your opponents. Scouting involves watching other matches to gather information about what decks are popular and what strategies are being used. This information can help you prepare for your next match by anticipating what cards your opponent may have and what their game plan might be. Studying the metagame involves analyzing data from previous tournaments to identify trends and determine what decks are strong against the current meta. By doing this, you can adjust your deck and playstyle to counter popular strategies and increase your chances of winning.</p>\n<p>In conclusion, winning a trading card game requires more than just having a strong deck. It involves efficient use of time, playing to our outs, and scouting during tournaments. By adopting these strategies, you can increase your chances of converting more matches into wins and achieving your goals in the game. Remember to stay focused, adapt to different situations, and have fun!</p>",
+      description: 'Converting more matches into victories',
+      seoTitle: 'Playing to Win: Convert More TCG Matches Into Victories',
+      seoDescription:
+        'Win more TCG matches with better time management, playing to your outs, and tournament scouting. Practical competitive tips for any trading card game.',
+      keywords:
+        'playing to win TCG, tournament scouting, play to your outs, competitive card games, convert matches to wins, MTG tournament tips',
+    },
+  ],
 };
+
+export const getPublishedArticles = (): Article[] =>
+  articlesData.data.filter((article) => article.status === 'published');
+
+export const getArticleBySlug = (slug: string): Article | undefined =>
+  getPublishedArticles().find((article) => article.slug === slug);
+
+export const getAllArticleSlugs = (): string[] =>
+  getPublishedArticles().map((article) => article.slug);
+
+export const getRelatedArticles = (
+  slug: string,
+  limit = 3,
+): Article[] =>
+  getPublishedArticles()
+    .filter((article) => article.slug !== slug)
+    .slice(0, limit);
